@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../static/css/styles.css";
 
 const Intro = () => {
+  const PT_LS = "personality_type";
+  localStorage.setItem(PT_LS, JSON.stringify({ A: 0, B: 0, C: 0, D: 0 })); //초기화
   return (
     <div className="body">
       {/* <div id="loader" className="my-auto text-sm">

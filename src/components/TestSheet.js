@@ -3,34 +3,54 @@ import "../static/css/styles.css";
 
 const PT_LS = "personality_type";
 
-const TestSheet = ({ question, one, two, three, four, nextPagePath }) => {
-  const hrefName = `/#/${nextPagePath}`;
-  const [pt_obj, setPt_obj] = useState({ A: 0, B: 0, C: 0, D: 0 });
-  const [readyToGo, setReadyToGo] = useState(false);
+const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
+  const [pt_obj, setPt_obj] = useState(JSON.parse(localStorage.getItem(PT_LS)));
 
   useEffect(() => {
     localStorage.setItem(PT_LS, JSON.stringify(pt_obj));
-    setReadyToGo(true);
-    if (readyToGo) {
-      document.location.href = hrefName;
-    }
-  }, [pt_obj]);
+    return () => {
+      document.location.href = nextHrefName;
+    };
+  }, [pt_obj, nextHrefName]);
 
   const handleClickA = (event) => {
     event.preventDefault();
-    setPt_obj({ A: pt_obj["A"] + 1, B: 0, C: 0, D: 0 });
+    setPt_obj({
+      A: pt_obj["A"] + 1,
+      B: pt_obj["B"],
+      C: pt_obj["C"],
+      D: pt_obj["D"],
+    });
   };
   const handleClickB = (event) => {
     event.preventDefault();
-    setPt_obj({ A: 0, B: pt_obj["B"] + 1, C: 0, D: 0 });
+    // setReadyToGo(true);
+    setPt_obj({
+      A: pt_obj["A"],
+      B: pt_obj["B"] + 1,
+      C: pt_obj["C"],
+      D: pt_obj["D"],
+    });
   };
   const handleClickC = (event) => {
     event.preventDefault();
-    setPt_obj({ A: 0, B: 0, C: pt_obj["C"] + 1, D: 0 });
+    // setReadyToGo(true);
+    setPt_obj({
+      A: pt_obj["A"],
+      B: pt_obj["B"],
+      C: pt_obj["C"] + 1,
+      D: pt_obj["D"],
+    });
   };
   const handleClickD = (event) => {
     event.preventDefault();
-    setPt_obj({ A: 0, B: 0, C: 0, D: pt_obj["D"] + 1 });
+    // setReadyToGo(true);
+    setPt_obj({
+      A: pt_obj["A"],
+      B: pt_obj["B"],
+      C: pt_obj["C"],
+      D: pt_obj["D"] + 1,
+    });
   };
   return (
     <div id="container" className="container">
@@ -40,18 +60,21 @@ const TestSheet = ({ question, one, two, three, four, nextPagePath }) => {
         <button className="text-left" onClick={(event) => handleClickA(event)}>
           {one}
         </button>
+
         <button
           className="text-left mt-3"
           onClick={(event) => handleClickB(event)}
         >
           {two}
         </button>
+
         <button
           className="text-left mt-3"
           onClick={(event) => handleClickC(event)}
         >
           {three}
         </button>
+
         <button
           className="text-left mt-3"
           onClick={(event) => handleClickD(event)}
@@ -59,7 +82,8 @@ const TestSheet = ({ question, one, two, three, four, nextPagePath }) => {
           {four}
         </button>
       </div>
-      <div Dd="progress_bar" className="progress_bar">
+
+      <div id="progress_bar" className="progress_bar">
         <div className="w-10% progress"></div>
       </div>
     </div>
