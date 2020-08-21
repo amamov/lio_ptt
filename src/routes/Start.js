@@ -4,11 +4,11 @@ import "../static/css/styles.css";
 import "../static/css/fonts.css";
 
 const Start = () => {
-  const PT_LS = "personality_type";
-  const RT_LS = "result_types";
+  // const PT_LS = "personality_type";
+  // const RT_LS = "result_types";
 
-  localStorage.setItem(PT_LS, {});
-  localStorage.setItem(RT_LS, []);
+  // localStorage.setItem(PT_LS, {});
+  // localStorage.setItem(RT_LS, []);
 
   return (
     <div className="body">

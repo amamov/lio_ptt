@@ -1,17 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "../static/css/styles.css";
 
 const PT_LS = "personality_type";
+const RT_LS = "result_types";
 
 const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
   const [pt_obj, setPt_obj] = useState(JSON.parse(localStorage.getItem(PT_LS)));
 
+  const goToResultPage = useCallback(
+    (result_list) => {
+      if (result_list.length === 1) {
+        document.location.href = `/#/result${result_list[0]}`;
+      } else {
+        localStorage.setItem(RT_LS, JSON.stringify(result_list));
+        document.location.href = nextHrefName;
+      }
+    },
+    [nextHrefName]
+  );
+
+  const calculateResults = useCallback(() => {
+    const { A, B, C, D } = pt_obj;
+    const max = Math.max(A, B, C, D);
+    let result_list = [];
+    ["A", "B", "C", "D"].map((key) => {
+      if (pt_obj[key] === max) {
+        result_list.push(key);
+      }
+    });
+    goToResultPage(result_list);
+  }, [pt_obj, goToResultPage]);
+
   useEffect(() => {
     localStorage.setItem(PT_LS, JSON.stringify(pt_obj));
     return () => {
-      document.location.href = nextHrefName;
+      if (nextHrefName !== "/#/test10") {
+        document.location.href = nextHrefName;
+      } else {
+        calculateResults();
+      }
     };
-  }, [pt_obj, nextHrefName]);
+  }, [pt_obj, nextHrefName, calculateResults]);
 
   const handleClickA = (event) => {
     event.preventDefault();
