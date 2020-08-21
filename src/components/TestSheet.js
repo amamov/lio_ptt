@@ -33,13 +33,12 @@ const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
 
   useEffect(() => {
     localStorage.setItem(PT_LS, JSON.stringify(pt_obj));
-    return () => {
-      if (nextHrefName !== "/#/test10") {
-        document.location.href = nextHrefName;
-      } else {
-        calculateResults();
-      }
-    };
+
+    if (nextHrefName !== "/#/test10") {
+      return () => (document.location.href = nextHrefName);
+    } else {
+      return calculateResults();
+    }
   }, [pt_obj, nextHrefName, calculateResults]);
 
   const handleClickA = (event) => {
