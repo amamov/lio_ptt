@@ -23,7 +23,7 @@ const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
     const { A, B, C, D } = pt_obj;
     const max = Math.max(A, B, C, D);
     let result_list = [];
-    ["A", "B", "C", "D"].map((key) => {
+    ["A", "B", "C", "D"].forEach((key) => {
       if (pt_obj[key] === max) {
         result_list.push(key);
       }
@@ -34,11 +34,13 @@ const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
   useEffect(() => {
     localStorage.setItem(PT_LS, JSON.stringify(pt_obj));
 
-    if (nextHrefName !== "/#/test10") {
-      return () => (document.location.href = nextHrefName);
-    } else {
-      return calculateResults();
-    }
+    return () => {
+      if (nextHrefName !== "/#/test10") {
+        document.location.href = nextHrefName;
+      } else {
+        calculateResults();
+      }
+    };
   }, [pt_obj, nextHrefName, calculateResults]);
 
   const handleClickA = (event) => {
