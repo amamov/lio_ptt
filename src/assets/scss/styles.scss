@@ -1,0 +1,106 @@
+// ./assets/scss/styles.scss
+@tailwind base;
+@tailwind components;
+
+// loading animation
+@keyframes fadeIn_Ani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spread_Ani {
+  from {
+    margin: 100%;
+    width: 300%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+body {
+  animation-duration: 1s;
+  animation-name: fadeIn_Ani;
+}
+
+.ani-spread {
+  animation-duration: 1s;
+  animation-name: spread_Ani;
+}
+
+// Font
+// @font-face {
+//   src: url("../fonts/Freight_Sans_Black_SC.otf");
+//   font-family: "freight-sans-pro", "sans-serif";
+//   font-style: normal;
+//   font-weight: 300;
+// }
+
+// body {
+//   font-family: "freight-sans-pro", "sans-serif";
+// }
+
+// Layout
+.body {
+  @apply bg-Navy text-white h-screen flex justify-center items-start;
+}
+
+.container {
+  @apply bg-Navy w-full h-full flex flex-col p-10;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    @apply w-500px;
+  }
+}
+.move-bt {
+  @apply bg-white mt-10 w-full h-16 text-black rounded-sm flex justify-center items-center;
+  //transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300
+}
+
+.move-bt:hover {
+  @apply bg-gray-600;
+}
+
+.progress_bar {
+  @apply bg-white w-full h-5 flex justify-start rounded-lg mt-24;
+}
+
+.progress {
+  @apply bg-orange  h-full rounded-lg;
+}
+
+// loder
+#loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@tailwind utilities;

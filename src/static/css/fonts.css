@@ -1,0 +1,11 @@
+/*! font */
+Font @font-face {
+  src: url("../fonts/Freight_Sans_Black_SC.otf");
+  font-family: "freight-sans-pro", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.poster-font {
+  font-family: "freight-sans-pro", "sans-serif";
+}
