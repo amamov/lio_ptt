@@ -35,7 +35,7 @@ const Start = () => {
           </Link>
         </div>
       ) : (
-        <div className="w-full flex justify-center">
+        <div className="flex justify-center">
           <img
             src={require("../images/startImage.png")}
             alt="Lio"
