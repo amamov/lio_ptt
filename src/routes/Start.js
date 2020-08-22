@@ -1,27 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../static/css/styles.css";
 import "../static/css/fonts.css";
 
 const Start = () => {
-  // const PT_LS = "personality_type";
-  // const RT_LS = "result_types";
+  const [isReady, setIsReady] = useState(false);
 
-  // localStorage.setItem(PT_LS, {});
-  // localStorage.setItem(RT_LS, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsReady(true);
+    }, 2000);
+  }, []);
 
   return (
     <div className="body">
-      {/* <div id="loader">
-        <img src="./images/mdr2.png" alt="Loading..." title="Loading..." />
-        Loding...
-      </div> */}
-      <Link to={{ pathname: "/intro" }}>
-        {/* <img src={require("../images/.png")} alt="Lio" title="Lio" /> */}
-        <div className="poster-font w-full h-screen">
-          image(터치하면 넘어 간다.)
+      {isReady ? (
+        <Link to={{ pathname: "/intro" }}>
+          {/* <img src={require("../images/.png")} alt="Lio" title="Lio" /> */}
+          <div className="poster-font w-full h-screen">
+            image(터치하면 넘어 간다.)
+          </div>
+        </Link>
+      ) : (
+        <div id="startLoader" className="bg-blue">
+          <img
+            src={require("../images/startLoadingImage.PNG")}
+            alt="Lio"
+            title="Lio"
+          />
         </div>
-      </Link>
+      )}
     </div>
   );
 };

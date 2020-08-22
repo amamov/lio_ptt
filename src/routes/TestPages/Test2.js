@@ -12,7 +12,9 @@ const Test2 = () => {
         three={"휴대폰을 틀어 SNS를 확인한다."}
         four={"누워서 뒹굴거린다."}
         nextHrefName={"/#/test3"}
-      />
+      >
+        <div className="w-20% progress"></div>
+      </TestSheet>
     </div>
   );
 };

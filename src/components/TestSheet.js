@@ -4,7 +4,15 @@ import "../static/css/styles.css";
 const PT_LS = "personality_type";
 const RT_LS = "result_types";
 
-const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
+const TestSheet = ({
+  question,
+  one,
+  two,
+  three,
+  four,
+  nextHrefName,
+  children,
+}) => {
   const [pt_obj, setPt_obj] = useState(JSON.parse(localStorage.getItem(PT_LS)));
 
   const goToResultPage = useCallback(
@@ -114,7 +122,7 @@ const TestSheet = ({ question, one, two, three, four, nextHrefName }) => {
       </div>
 
       <div id="progress_bar" className="progress_bar">
-        <div className="w-10% progress"></div>
+        {children}
       </div>
     </div>
   );

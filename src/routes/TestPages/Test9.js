@@ -6,13 +6,15 @@ const Test2 = () => {
   return (
     <div className="body">
       <TestSheet
-        question={"Q9. 아침에 일어나 가장 먼저 하는 일은 무엇인가요?"}
-        one={"밥을 먹는다."}
-        two={"욕실로 가서 씻는다."}
-        three={"휴대폰을 틀어 SNS를 확인한다."}
-        four={"누워서 뒹굴거린다."}
+        question={"Q9. 자기 전, 내일 먹을 점심을 고민합니다. 무엇을 먹을까요?"}
+        one={"떡볶이"}
+        two={"셀러드"}
+        three={"정갈한 가정식"}
+        four={"내일 생각하자.. 인생이란..."}
         nextHrefName={"/#/test10"}
-      />
+      >
+        <div className="w-90% progress"></div>
+      </TestSheet>
     </div>
   );
 };

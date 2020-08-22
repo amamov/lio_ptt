@@ -14,7 +14,9 @@ const Test1 = () => {
         three={"기억나지 않는다. 그런데 누군가와 싸우고 있었던 것 같다."}
         four={"사방이 벽으로 된 밀폐된 창고에 같혀있는 꿈을 꾸었다."}
         nextHrefName={"/#/test2"}
-      />
+      >
+        <div className="w-10% progress"></div>
+      </TestSheet>
     </div>
   );
 };
