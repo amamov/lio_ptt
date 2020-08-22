@@ -10,7 +10,7 @@ const Prestart = () => {
         title="Lio"
         className=""
       />
-      <div className="absolute top-116px left-135px">title</div>
+      <div className="absolute top-116px usewidthtocentercheck"></div>
     </div>
   );
 };
