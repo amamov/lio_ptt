@@ -15,7 +15,7 @@ const Prestart = () => {
         title="Lio"
         className=""
       />
-      <div class="absolute" style={positionStyle}>
+      <div className="absolute" style={positionStyle}>
         title
       </div>
     </div>
