@@ -9,7 +9,7 @@ const Start = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsReady(true);
-    }, 2000);
+    }, 5000);
   }, []);
 
   return (
