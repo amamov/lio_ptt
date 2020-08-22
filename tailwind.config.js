@@ -10,6 +10,7 @@ module.exports = {
           "1": "#413ece",
           "2": "#373c7f",
         },
+        startBg: "#131120",
       },
       spacing: {
         "10%": "10%",
@@ -23,6 +24,8 @@ module.exports = {
         "90%": "90%",
         "25rem": "25rem",
         "500px": "500px",
+        "414px": "414px",
+        "736px": "736px",
       },
       animation: {
         spin: "spin 1s linear",

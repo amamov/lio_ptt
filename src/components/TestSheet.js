@@ -62,7 +62,6 @@ const TestSheet = ({
   };
   const handleClickB = (event) => {
     event.preventDefault();
-    // setReadyToGo(true);
     setPt_obj({
       A: pt_obj["A"],
       B: pt_obj["B"] + 1,
@@ -72,7 +71,6 @@ const TestSheet = ({
   };
   const handleClickC = (event) => {
     event.preventDefault();
-    // setReadyToGo(true);
     setPt_obj({
       A: pt_obj["A"],
       B: pt_obj["B"],
@@ -82,7 +80,6 @@ const TestSheet = ({
   };
   const handleClickD = (event) => {
     event.preventDefault();
-    // setReadyToGo(true);
     setPt_obj({
       A: pt_obj["A"],
       B: pt_obj["B"],
@@ -100,30 +97,28 @@ const TestSheet = ({
         </button>
 
         <button
-          className="text-left mt-3"
+          className="slectorStyle"
           onClick={(event) => handleClickB(event)}
         >
           {two}
         </button>
 
         <button
-          className="text-left mt-3"
+          className="slectorStyle"
           onClick={(event) => handleClickC(event)}
         >
           {three}
         </button>
 
         <button
-          className="text-left mt-3"
+          className="slectorStyle"
           onClick={(event) => handleClickD(event)}
         >
           {four}
         </button>
       </div>
 
-      <div id="progress_bar" className="progress_bar">
-        {children}
-      </div>
+      <div className="progress_bar">{children}</div>
     </div>
   );
 };

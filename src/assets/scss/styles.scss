@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 
-// loading animation
+///////////// body loading animation /////////////
 @keyframes fadeIn_Ani {
   from {
     opacity: 0;
@@ -33,7 +33,10 @@ body {
   animation-name: spread_Ani;
 }
 
-// Layout
+///////////// Layout /////////////
+html {
+  background-color: #131120;
+}
 .body {
   @apply bg-Navy text-white h-screen flex justify-center items-start;
 }
@@ -47,6 +50,8 @@ body {
     @apply w-500px;
   }
 }
+
+///////////// intro, final button /////////////
 .move-bt {
   @apply bg-white mt-10 w-full h-16 text-black rounded-sm flex justify-center items-center;
   //transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300
@@ -56,15 +61,24 @@ body {
   @apply bg-gray-600;
 }
 
+///////////// progress bar /////////////
 .progress_bar {
   @apply bg-white w-full h-5 flex justify-start rounded-lg mt-24;
 }
 
 .progress {
-  @apply bg-orange  h-full rounded-lg;
+  @apply bg-orange h-full rounded-lg;
 }
 
-// loder
+///////////// testSheet button /////////////
+.slectorStyle {
+  @apply text-left mt-3;
+}
+
+.slectorStyle:hover {
+}
+
+///////////// loder /////////////
 #loader {
   margin-top: auto;
   margin-bottom: auto;

@@ -13,18 +13,31 @@ const Start = () => {
   }, []);
 
   return (
-    <div className="body">
+    <div className="body bg-startBg items-center">
       {isReady ? (
-        <Link to={{ pathname: "/intro" }}>
-          {/* <img src={require("../images/.png")} alt="Lio" title="Lio" /> */}
-          <div className="poster-font w-full h-screen">
-            image(터치하면 넘어 간다.)
-          </div>
-        </Link>
-      ) : (
-        <div id="startLoader" className="bg-blue">
+        <div className="w-full flex justify-center relative">
           <img
-            src={require("../images/startLoadingImage.PNG")}
+            src={require("../images/startWow.png")}
+            alt="Lio"
+            title="Lio"
+            className="w-414px h-736px"
+          />
+          <Link
+            to={{ pathname: "/intro" }}
+            className="absolute top-0 animate-pulse"
+          >
+            <img
+              src={require("../images/startChar.png")}
+              alt="Lio"
+              title="Lio"
+              className="w-414px h-736"
+            />
+          </Link>
+        </div>
+      ) : (
+        <div className="w-full flex justify-center">
+          <img
+            src={require("../images/startLoadingImage.png")}
             alt="Lio"
             title="Lio"
           />
