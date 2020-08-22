@@ -45,10 +45,14 @@ html {
   @apply bg-Navy w-full h-full flex flex-col p-10;
 }
 
-@media screen and (min-width: 500px) {
-  .container {
-    @apply w-500px;
-  }
+// @media screen and (min-width: 500px) {
+//   .container {
+//     @apply w-500px;
+//   }
+// }
+///////////// space /////////////
+.top-30 {
+  top: 30px;
 }
 
 ///////////// intro, final button /////////////

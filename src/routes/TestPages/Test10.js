@@ -70,8 +70,7 @@ const Test10 = () => {
             스트레스 유형 진단하기
           </span>
           <span className="block mt-10 text-xl">
-            Q10. 긴 하루를 끝내고 당신은 잠에 들었습니다. 어떤 꿈을 꾸고 있나요?
-            행복해보이네요...
+            Q10. 자기 전, 내일 먹을 점심을 고민합니다. 무엇을 먹을까요?
           </span>
           <div className="flex flex-col items-start mt-10 animate-pulse">
             <button
@@ -79,7 +78,7 @@ const Test10 = () => {
               style={{ display: showA() }}
               onClick={(event) => handleClickA(event)}
             >
-              기억나지 않는다. 그런데 누군가와 싸우고 있었던 것 같다.
+              떡볶이
             </button>
 
             <button
@@ -87,7 +86,7 @@ const Test10 = () => {
               style={{ display: showB() }}
               onClick={(event) => handleClickB(event)}
             >
-              물에 빠져 허우적거리는 꿈을 꾸었다.
+              셀러드
             </button>
 
             <button
@@ -95,7 +94,7 @@ const Test10 = () => {
               style={{ display: showC() }}
               onClick={(event) => handleClickC(event)}
             >
-              사방이 벽으로 된 밀폐된 창고에 갇혀있는 꿈을 꾸었다.
+              정갈한 가정식
             </button>
 
             <button
@@ -103,8 +102,7 @@ const Test10 = () => {
               style={{ display: showD() }}
               onClick={(event) => handleClickD(event)}
             >
-              누군가에게 계속 쫒기다가 공간이 바뀌었는데 또 꿈이었다. 겨우 깼다.
-              |꿈속의 꿈|
+              내일 생각하자.. 인생이란...
             </button>
           </div>
 

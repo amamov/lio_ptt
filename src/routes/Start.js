@@ -9,7 +9,7 @@ const Start = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsReady(true);
-    }, 3000);
+    }, 0);
   }, []);
 
   return (
@@ -35,12 +35,14 @@ const Start = () => {
           </Link>
         </div>
       ) : (
-        <div className="flex justify-center">
+        <div className="container justify-center p-0 relative">
           <img
             src={require("../images/startImage.png")}
             alt="Lio"
             title="Lio"
+            // className="absolute"
           />
+          <div className="absolute top-30">klsjdaklajd</div>
         </div>
       )}
     </div>
