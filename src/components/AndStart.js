@@ -4,7 +4,7 @@ import "../static/css/styles.css";
 
 const Andstart = () => {
   return (
-    <div className="w-full flex justify-center relative">
+    <div className="flex flex-col relative">
       <img src={require("../images/startWow.png")} alt="Lio" title="Lio" />
       <Link to={{ pathname: "/intro" }} style={{ position: "absolute" }}>
         <img
