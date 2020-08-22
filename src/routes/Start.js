@@ -1,51 +1,43 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "../static/css/styles.css";
 import "../static/css/fonts.css";
+import Loader from "../components/Loader";
+import StartPresenter from "../components/StartPresenter";
 
 const Start = () => {
   const [isReady, setIsReady] = useState(false);
 
+  const cacheImages = (srcArray) => {
+    srcArray.forEach((src) => {
+      new Promise(function (resolve, reject) {
+        const image = new Image();
+        image.src = src;
+        image.onload = resolve();
+        image.onerror = reject();
+      });
+    });
+
+    setIsReady(true);
+  };
+
   useEffect(() => {
-    setTimeout(() => {
-      setIsReady(true);
-    }, 0);
+    const images = [
+      require("../images/human.png"),
+      require("../images/introBg.png"),
+      require("../images/logo.png"),
+      require("../images/prestartBg.png"),
+      require("../images/prestartCandy.png"),
+      require("../images/prestartThing.png"),
+      require("../images/prestartBg.png"),
+      require("../images/startBg.png"),
+      require("../images/startmachine.png"),
+      require("../images/test1bg.png"),
+    ];
+    cacheImages(images);
   }, []);
 
   return (
-    <div className="body bg-startBg items-center">
-      {isReady ? (
-        <div className="w-full flex justify-center relative">
-          <img
-            src={require("../images/startWow.png")}
-            alt="Lio"
-            title="Lio"
-            className="w-414px h-736px"
-          />
-          <Link
-            to={{ pathname: "/intro" }}
-            className="absolute top-0 animate-pulse"
-          >
-            <img
-              src={require("../images/startChar.png")}
-              alt="Lio"
-              title="Lio"
-              className="w-414px h-736"
-            />
-          </Link>
-        </div>
-      ) : (
-        <div className="container justify-center p-0 relative">
-          <img
-            src={require("../images/startImage.png")}
-            alt="Lio"
-            title="Lio"
-            // className="absolute"
-          />
-          <div className="absolute top-30">klsjdaklajd</div>
-        </div>
-      )}
-    </div>
+    <div className="body">{isReady ? <StartPresenter /> : <Loader />}</div>
   );
 };
 
