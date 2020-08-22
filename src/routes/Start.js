@@ -16,12 +16,14 @@ const Start = () => {
         image.onerror = reject();
       });
     });
-
-    setIsReady(true);
+    setTimeout(() => setIsReady(true), 1000);
   };
 
   useEffect(() => {
     const images = [
+      require("../images/prestartImage.png"),
+      require("../images/startChar.png"),
+      require("../images/startWow.png"),
       require("../images/human.png"),
       require("../images/introBg.png"),
       require("../images/logo.png"),
