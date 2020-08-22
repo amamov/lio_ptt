@@ -6,8 +6,13 @@ const Andstart = () => {
   return (
     <div className="w-full flex justify-center relative">
       <img src={require("../images/startWow.png")} alt="Lio" title="Lio" />
-      <Link to={{ pathname: "/intro" }} className="animate-pulse absolute">
-        <img src={require("../images/startChar.png")} alt="Lio" title="Lio" />
+      <Link to={{ pathname: "/intro" }} style={{ position: "absolute" }}>
+        <img
+          src={require("../images/startChar.png")}
+          alt="Lio"
+          title="Lio"
+          className="animate-pulse"
+        />
       </Link>
     </div>
   );

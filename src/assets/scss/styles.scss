@@ -35,14 +35,14 @@ body {
 
 ///////// Layout /////////////
 html {
-  background-color: #131120;
+  background-color: #000000;
 }
 .body {
-  @apply bg-Navy text-white h-screen flex justify-center items-start;
+  @apply text-white h-full flex justify-center items-start;
 }
 
 .container {
-  @apply bg-Navy w-full h-full flex flex-col p-10;
+  @apply w-full h-full flex flex-col p-10;
 }
 
 // @media screen and (min-width: 500px) {
@@ -50,6 +50,17 @@ html {
 //     @apply w-500px;
 //   }
 // }
+
+///////////// position /////////////
+.top-116px {
+  top: 116px;
+}
+
+.left-135px {
+  left: 135px;
+  // left: 0;
+}
+
 ///////////// space /////////////
 .top-30 {
   top: 30px;

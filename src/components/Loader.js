@@ -9,7 +9,7 @@ import "../static/css/styles.css";
 
 const Loader = () => {
   return (
-    <div className="body">
+    <div className="body h-screen">
       <div id="loader" className="text-sm"></div>
     </div>
   );

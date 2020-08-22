@@ -1,11 +1,6 @@
 import React from "react";
 import "../static/css/styles.css";
 
-const positionStyle = {
-  top: "116px",
-  left: "135px",
-};
-
 const Prestart = () => {
   return (
     <div className="flex flex-col relative">
@@ -15,9 +10,7 @@ const Prestart = () => {
         title="Lio"
         className=""
       />
-      <div className="absolute" style={positionStyle}>
-        title
-      </div>
+      <div className="absolute top-116px left-135px">title</div>
     </div>
   );
 };
