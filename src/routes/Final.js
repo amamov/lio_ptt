@@ -9,7 +9,12 @@ const Final = () => {
         <Link to={{ pathname: "/" }} class="move-bt">
           다시 검사하기
         </Link>
-        <a href="https://www.google.com" class="move-bt" target="_blank">
+        <a
+          href="https://www.google.com"
+          class="move-bt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           텀블벅 바로가기
         </a>
       </div>
