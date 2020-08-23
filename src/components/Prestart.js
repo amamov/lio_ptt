@@ -5,7 +5,7 @@ const Prestart = () => {
   return (
     <div className="flex flex-col relative">
       <img
-        src={require("../images/prestartImage.png")}
+        src={require("../images/vector.svg")}
         alt="Lio"
         title="Lio"
         className=""
