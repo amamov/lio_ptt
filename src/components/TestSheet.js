@@ -5,6 +5,7 @@ const PT_LS = "personality_type";
 const RT_LS = "result_types";
 
 const TestSheet = ({
+  id,
   question,
   one,
   two,
@@ -88,37 +89,48 @@ const TestSheet = ({
     });
   };
   return (
-    <div id="container" className="container">
-      <span className="block text-center text-3xl">스트레스 유형 진단하기</span>
-      <span className="block mt-10 text-xl">{question}</span>
-      <div className="flex flex-col items-start mt-10 animate-pulse">
-        <button className="text-left" onClick={(event) => handleClickA(event)}>
+    <div>
+      <div className="flex flex-row justify-between p-6 text-xs">
+        <div>LIOLAB</div>
+        <div>LIO STUDIO</div>
+      </div>
+      <span className="block text-center text-xl font-bold m-5">{id}</span>
+      <div className="p-10 pb-0 pt-0 text-center">
+        <span className="text-center text-xl font-bold ">{question}</span>
+      </div>
+      <div className="flex flex-col items-start mt-10 p-12 animate-pulse">
+        <button className="text-left " onClick={(event) => handleClickA(event)}>
+          <span className="text-orange mr-2">1</span>
           {one}
         </button>
 
         <button
-          className="slectorStyle"
+          className="text-left mt-8"
           onClick={(event) => handleClickB(event)}
         >
+          <span className="text-orange mr-2">2</span>
           {two}
         </button>
 
         <button
-          className="slectorStyle"
+          className="text-left mt-8"
           onClick={(event) => handleClickC(event)}
         >
+          <span className="text-orange mr-2">3</span>
           {three}
         </button>
 
         <button
-          className="slectorStyle"
+          className="text-left mt-8"
           onClick={(event) => handleClickD(event)}
         >
+          <span className="text-orange mr-2">4</span>
           {four}
         </button>
       </div>
-
-      <div className="progress_bar">{children}</div>
+      <div className="p-12">
+        <div className="progress_bar">{children}</div>
+      </div>
     </div>
   );
 };

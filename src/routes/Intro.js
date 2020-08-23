@@ -1,18 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../static/css/styles.css";
+import "./image.css";
 
 const Intro = () => {
   const PT_LS = "personality_type";
   localStorage.setItem(PT_LS, JSON.stringify({ A: 0, B: 0, C: 0, D: 0 })); //초기화
   return (
     <div className="body">
-      {/* <div id="loader" className="my-auto text-sm">
-    Loding
-  </div>  */}
-      <div id="container" className="container">
-        <div>
-          <span id="title" className="block text-xl mb-4">
+      <div id="container" className="flex flex-col w-375px h-1436px bgIntro">
+        <div className="flex flex-row justify-between p-6 text-xs">
+          <div>LIOLAB</div>
+          <div>LIO STUDIO</div>
+        </div>
+        <div className="p-10 pt-5">
+          <span id="title" className="block text-2xl font-bold mb-4">
             스트레스,
             <br />
             행복을 위해 소멸되다.
@@ -20,55 +22,38 @@ const Intro = () => {
           <span id="sub-title" className="block mb-4">
             community platform
             <br />
-            2020.
+            20200707
           </span>
-        </div>
-        <div id="description" className="w-full">
-          Linear algebra is central to almost all areas of mathematics. For
-          instance, linear algebra is fundamental in modern presentations of
-          geometry, including for defining basic objects such as lines, planes
-          and rotations. Also, functional analysis, a branch of mathematical
-          analysis, may be viewed as basically the application of linear algebra
-          to spaces of functions. Linear algebra is also used in most sciences
-          and fields of engineering, because it allows modeling many natural
-          phenomena, and computing efficiently with such models. For nonlinear
-          systems, which cannot be modeled with linear algebra, it is often used
-          for dealing with first-order approximations, using the fact that the
-          differential of a multivariate function at a point is the linear map
-          that best approximates the function near that point. The procedure for
-          solving simultaneous linear equations now called Gaussian elimination
-          appears in the ancient Chinese mathematical text Chapter Eight:
-          Rectangular Arrays of The Nine Chapters on the Mathematical Art. Its
-          use is illustrated in eighteen problems, with two to five
-          equations.[4] Systems of linear equations arose in Europe with the
-          introduction in 1637 by René Descartes of coordinates in geometry. In
-          fact, in this new geometry, now called Cartesian geometry, lines and
-          planes are represented by linear equations, and computing their
-          intersections amounts to solving systems of linear equations. The
-          first systematic methods for solving linear systems used determinants,
-          first considered by Leibniz in 1693. In 1750, Gabriel Cramer used them
-          for giving explicit solutions of linear systems, now called Cramer's
-          rule. Later, Gauss further described the method of elimination, which
-          was initially listed as an advancement in geodesy.[5] In 1844 Hermann
-          Grassmann published his "Theory of Extension" which included
-          foundational new topics of what is today called linear algebra. In
-          1848, James Joseph Sylvester introduced the term matrix, which is
-          Latin for womb.Arthur Cayley introduced matrix multiplication and the
-          inverse matrix in 1856, making possible the general linear group. The
-          mechanism of group representation became available for describing
-          complex and hypercomplex numbers. Crucially, Cayley used a single
-          letter to denote a matrix, thus treating a matrix as an aggregate
-          object. He also realized the connection between matrices and
-          determinants, and wrote "There would be many things to say about this
-          theory of matrices which should, it seems to me, precede the theory of
-          determinants".[5]
-        </div>
-        {/* <div className="move-bt">
 
-        </div> */}
-        <Link to={{ pathname: "./test1" }} className="move-bt">
-          테스트 시작하기
-        </Link>
+          <div id="description" className="w-full">
+            ‘L I O LAB’은 현대인을 관찰하여 문제를 발견하고 분석하며, 리오만의
+            새로운 해결 방식을 제시하는 프로젝트 연구실입니다. <br />
+            <br />
+            여느 때와 같이 20200720 리오랩은 연구 중, 스트레스 세포 ST-02∞를
+            발견하였습니다. ST-02∞는 현대인의 스트레스를 유발하고 극대화하는
+            바이러스 중 하나로, 우리가 살아가는 데 압박을 주는 내면의
+            요소입니다. ST-02∞가 존재하는 한 현대인들이 만성 피로에서 벗어날 수
+            없는 것이라는 결론이 도출되었습니다. 이 세포를 박멸하기 위해서는
+            ‘소멸’ 형태의 면역 시스템이 필요합니다. 면역 시스템을 갖출 방법을
+            모색하기 위해, 그간 LIO LAB에서는 연구가 활발히 진행되었습니다.
+            <br />
+            <br />
+            연구 결과, 바이러스 세포를 네가지 유형으로 분류하였습니다. 또한
+            각각의 바이러스에 대항하는 항체 anti ST-02 를 만들어 내는 데
+            성공하였습니다. 리오랩은 스트레스를 소멸시키기 위한 방안으로
+            ‘행위’에 주목 했습니다. 어떠한 행위를 함으로써 일부, 혹은 전체
+            스트레스가 해소되는 현상에서 세포와 행위, 그 둘사이에 연관성을
+            찾아내기 위해 노력하였습니다.
+            <br />
+            <br /> 행위를 따라하면 항체가 몸 내부에 생성되는 원리에
+            집중하였는데요, 행위를 반복함으로써 항체가 강화 되고 ST-02∞를
+            박멸하게 되는 긍정적인 해결방안이 만들어졌습니다. 리오랩은 이러한
+            연구를 집약한 결과물인 ‘프리미엄 소멸코스’ 세상에 공개하고자 합니다.
+          </div>
+          <Link to={{ pathname: "./test1" }} className="move-bt">
+            테스트 시작하기
+          </Link>
+        </div>
       </div>
     </div>
   );

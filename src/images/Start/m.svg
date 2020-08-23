@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414" height="172" viewBox="0 0 414 172">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-기계);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #a3a6cc;
+        stroke-width: 17px;
+        opacity: 0.8;
+      }
+
+      .cls-2, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        fill: #13171e;
+      }
+
+      .cls-5 {
+        fill: #111625;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #f26330;
+      }
+
+      .cls-6 {
+        stroke: #f26330;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        fill: #45426a;
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-11 {
+        fill: rgba(28,28,53,0);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="8.811" gradientTransform="translate(0.48) scale(0.04 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f26330"/>
+      <stop offset="1" stop-color="#1b1b34"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.113" y1="0.5" x2="0.887" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#45426a"/>
+      <stop offset="1" stop-color="#1b1b34"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-기계">
+      <rect width="414" height="172"/>
+    </clipPath>
+  </defs>
+  <g id="기계" class="cls-1">
+    <rect class="cls-11" width="414" height="172"/>
+    <g id="그룹_27" data-name="그룹 27" transform="translate(-2053.5 -2000.561)">
+      <path id="패스_351" data-name="패스 351" class="cls-2" d="M2207.108,2109s-2.369,12.708-20.032,24.34c-15.167,9.988-21.109,30.587-5.6,40.064s43.08-5.17,43.08-5.17" transform="translate(-67.663 -60.502)"/>
+      <rect id="사각형_1553" data-name="사각형 1553" class="cls-3" width="414" height="16.37" transform="translate(2053.5 2155.983)"/>
+      <rect id="사각형_1554" data-name="사각형 1554" class="cls-4" width="219.709" height="12.709" rx="6.354" transform="translate(2150.861 2103.641)"/>
+      <rect id="사각형_1555" data-name="사각형 1555" class="cls-4" width="219.709" height="6.462" rx="3.231" transform="translate(2150.861 2138.967)"/>
+      <path id="사각형_1556" data-name="사각형 1556" class="cls-5" d="M0,0H224.447a0,0,0,0,1,0,0V1.51A13.137,13.137,0,0,1,211.31,14.647H14.647A14.647,14.647,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(2201.049 2086.84)"/>
+      <path id="사각형_1557" data-name="사각형 1557" class="cls-5" d="M14.538,0h0a0,0,0,0,1,0,0V125.008a0,0,0,0,1,0,0h-2.22A12.318,12.318,0,0,1,0,112.69V14.538A14.538,14.538,0,0,1,14.538,0Z" transform="translate(2095.809 2017.9) rotate(-50)"/>
+      <rect id="사각형_1558" data-name="사각형 1558" class="cls-6" width="5.79" height="87.49" rx="2.895" transform="translate(2123.109 2034.751) rotate(-50)"/>
+      <rect id="사각형_1559" data-name="사각형 1559" class="cls-6" width="174.76" height="6.473" rx="3.236" transform="translate(2214.059 2090.927)"/>
+      <rect id="사각형_1560" data-name="사각형 1560" class="cls-6" width="5.79" height="87.49" rx="2.895" transform="translate(2123.109 2034.751) rotate(-50)"/>
+      <rect id="사각형_1561" data-name="사각형 1561" class="cls-6" width="174.76" height="6.473" rx="3.236" transform="translate(2214.059 2090.927)"/>
+      <rect id="사각형_1562" data-name="사각형 1562" class="cls-7" width="127.63" height="3.877" rx="1.939" transform="translate(2106.171 2002.708) rotate(40)"/>
+      <circle id="타원_283" data-name="타원 283" class="cls-8" cx="2.585" cy="2.585" r="2.585" transform="translate(2396.202 2091.579)"/>
+      <circle id="타원_284" data-name="타원 284" class="cls-9" cx="2.585" cy="2.585" r="2.585" transform="translate(2406.111 2091.579)"/>
+      <rect id="사각형_1563" data-name="사각형 1563" class="cls-10" width="225.309" height="3.877" rx="1.939" transform="translate(2200.834 2083.178)"/>
+      <rect id="사각형_1564" data-name="사각형 1564" class="cls-10" width="225.309" height="4.739" rx="2.369" transform="translate(2148.492 2116.996)"/>
+      <rect id="사각형_1565" data-name="사각형 1565" class="cls-10" width="225.309" height="4.739" rx="2.369" transform="translate(2148.492 2122.596)"/>
+      <rect id="사각형_1566" data-name="사각형 1566" class="cls-10" width="225.309" height="4.739" rx="2.369" transform="translate(2148.492 2128.197)"/>
+      <rect id="사각형_1567" data-name="사각형 1567" class="cls-10" width="225.309" height="4.739" rx="2.369" transform="translate(2148.492 2133.797)"/>
+      <path id="패스_352" data-name="패스 352" class="cls-6" d="M2491.67,2340.031H2228.363a.4.4,0,0,1-.1-.8l21.632-5.222a.421.421,0,0,1,.1-.011h220.043a.421.421,0,0,1,.1.011l21.632,5.222A.4.4,0,0,1,2491.67,2340.031Z" transform="translate(-99.301 -188.571)"/>
+      <path id="패스_353" data-name="패스 353" class="cls-6" d="M2491.67,2340.031H2228.363a.4.4,0,0,1-.1-.8l21.632-5.222a.421.421,0,0,1,.1-.011h220.043a.421.421,0,0,1,.1.011l21.632,5.222A.4.4,0,0,1,2491.67,2340.031Z" transform="translate(-99.301 -188.571)"/>
+      <rect id="사각형_1568" data-name="사각형 1568" class="cls-4" width="281.744" height="3.877" rx="1.939" transform="translate(2119.628 2151.891)"/>
+    </g>
+  </g>
+</svg>

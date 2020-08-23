@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="35" viewBox="0 0 34 35">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-로고);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: rgba(28,28,53,0);
+      }
+    </style>
+    <clipPath id="clip-로고">
+      <rect width="34" height="35"/>
+    </clipPath>
+  </defs>
+  <g id="로고" class="cls-1">
+    <rect class="cls-3" width="34" height="35"/>
+    <g id="그룹_22" data-name="그룹 22" transform="translate(-226.337 -503.476)">
+      <path id="패스_342" data-name="패스 342" class="cls-2" d="M229.329,520.674h-2.992V503.729h23.572v2.992h-20.58Z" transform="translate(0 0)"/>
+      <rect id="사각형_1541" data-name="사각형 1541" class="cls-2" width="2.992" height="17.054" transform="translate(234.18 511.915)"/>
+      <path id="패스_343" data-name="패스 343" class="cls-2" d="M306.745,593.079a8.665,8.665,0,1,1,8.665-8.665A8.675,8.675,0,0,1,306.745,593.079Zm0-14.338a5.673,5.673,0,1,0,5.673,5.673A5.679,5.679,0,0,0,306.745,578.741Z" transform="translate(-55.232 -55.445)"/>
+    </g>
+  </g>
+</svg>

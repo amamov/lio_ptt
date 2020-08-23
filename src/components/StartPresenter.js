@@ -10,7 +10,7 @@ const StartPresenter = () => {
   useEffect(() => {
     setTimeout(() => {
       setTimeDelay(false);
-    }, 10000);
+    }, 3000);
   }, []);
 
   return timeDelay ? <Prestart /> : <Andstart />;
