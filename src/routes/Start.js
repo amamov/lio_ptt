@@ -21,19 +21,10 @@ const Start = () => {
 
   useEffect(() => {
     const images = [
-      require("../images/prestartImage.png"),
+      require("../images/bg1.svg"),
       require("../images/startChar.png"),
       require("../images/startWow.png"),
-      require("../images/human.png"),
-      require("../images/introBg.png"),
-      require("../images/logo.png"),
-      require("../images/prestartBg.png"),
-      require("../images/prestartCandy.png"),
-      require("../images/prestartThing.png"),
-      require("../images/prestartBg.png"),
       require("../images/startBg.png"),
-      require("../images/startmachine.png"),
-      require("../images/test1bg.png"),
     ];
     cacheImages(images);
   }, []);
