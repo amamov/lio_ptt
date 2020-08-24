@@ -9,7 +9,7 @@ const Intro = () => {
   return (
     <div className="body">
       <div id="container" className="flex flex-col w-375px h-1436px bgIntro">
-        <div className="flex flex-row justify-between p-6 text-xs">
+        <div className="header">
           <div>LIOLAB</div>
           <div>LIO STUDIO</div>
         </div>

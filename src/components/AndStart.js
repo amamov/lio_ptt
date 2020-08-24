@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../static/css/styles.css";
-import "./positionStyle.css";
 
 const Andstart = () => {
   return (

@@ -90,7 +90,7 @@ const TestSheet = ({
   };
   return (
     <div>
-      <div className="flex flex-row justify-between p-6 text-xs">
+      <div className="header">
         <div>LIOLAB</div>
         <div>LIO STUDIO</div>
       </div>

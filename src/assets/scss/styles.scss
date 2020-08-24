@@ -45,6 +45,10 @@ html {
   @apply w-full h-full flex flex-col p-10;
 }
 
+.header {
+  @apply flex flex-row justify-between p-6 text-xs;
+}
+
 // @media screen and (min-width: 500px) {
 //   .container {
 //     @apply w-500px;

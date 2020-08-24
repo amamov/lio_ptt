@@ -4,7 +4,7 @@ import "../static/css/styles.css";
 // const [isReady, setIsReady] = useState(false);
 
 //   useEffect(() => {
-//     setTimeout(() => setIsReady(true), 2000);
+//     setTimeout(() => {setIsReady(true)}, 2000);
 //   }, []);
 
 const Loader = () => {
