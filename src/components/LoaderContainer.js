@@ -30,7 +30,7 @@ const LoaderContainer = ({ delay = 1000, children }) => {
     // ];
     // cacheImages(images);
     setTimeout(() => setIsReady(true), delay);
-  }, []);
+  }, [delay]);
   return <div className="body">{isReady ? children : <Loader />}</div>;
 };
 
