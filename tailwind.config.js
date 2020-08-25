@@ -24,8 +24,6 @@ module.exports = {
         "90%": "90%",
         "25rem": "25rem",
         "500px": "500px",
-        "414px": "414px",
-        "736px": "736px",
       },
       animation: {
         spin: "spin 1s linear",

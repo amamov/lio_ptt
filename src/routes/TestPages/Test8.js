@@ -1,23 +1,27 @@
 import React from "react";
 import TestSheet from "../../components/TestSheet";
+import LoaderContainer from "../../components/LoaderContainer";
 import "../../static/css/styles.css";
+import "./TestBg.css";
 
 const Test8 = () => {
   return (
-    <div className="body">
-      <TestSheet
-        question={
-          "Q8. 머리 너무 아프네요.. 기분 전환이 필요해 보입니다! 당신은 어떤 행동을 할까요?"
-        }
-        one={"매운 음식을 시켜먹는다."}
-        two={"이불 속에 들어간다."}
-        three={"슬라임을 만지작 거린다."}
-        four={"샤워를 하면서 좋아하는 노래를 부른다.(듣는다.)"}
-        nextHrefName={"/#/test9"}
-      >
-        <div className="w-80% progress"></div>
-      </TestSheet>
-    </div>
+    <LoaderContainer>
+      <div className="w-375px h-667px p-12 bg8">
+        <div className="mt-56">
+          <TestSheet
+            one={"매운 음식을 시켜먹는다."}
+            two={"이불 속에 들어간다."}
+            three={"슬라임을 만지작 거린다."}
+            four={"샤워를 하면서 좋아하는 노래를 부른다.(듣는다.)"}
+            nextHrefName={"/#/test9"}
+            btColor={"text-black"}
+          >
+            <div className="w-80% progress"></div>
+          </TestSheet>
+        </div>
+      </div>
+    </LoaderContainer>
   );
 };
 

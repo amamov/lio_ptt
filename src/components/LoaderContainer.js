@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
 import "../static/css/styles.css";
 
-const LoaderContainer = ({ children }) => {
+const LoaderContainer = ({ delay = 1000, children }) => {
   const [isReady, setIsReady] = useState(false);
 
   const cacheImages = (srcArray) => {
@@ -14,22 +14,22 @@ const LoaderContainer = ({ children }) => {
         image.onerror = reject();
       });
     });
-    setTimeout(() => setIsReady(true), 1000);
+    setTimeout(() => setIsReady(true), delay);
   };
 
   useEffect(() => {
     const images = [
-      require("../images/Start/bg1.svg"),
-      require("../images/Start/bg2.svg"),
-      require("../images/Start/h.svg"),
-      require("../images/Start/m.svg"),
-      require("../images/Start/logo.svg"),
-      require("../images/Start/unsuck.svg"),
-      require("../images/Start/star.svg"),
-      require("../images/Intro/introbg.svg"),
-      require("../images/q1bg.svg"),
+      require("../images/TestPage/1.svg"),
+      require("../images/TestPage/2.svg"),
+      require("../images/TestPage/3.svg"),
+      require("../images/TestPage/4.svg"),
+      require("../images/TestPage/5.svg"),
+      require("../images/TestPage/6.svg"),
+      require("../images/TestPage/7.svg"),
+      require("../images/TestPage/8.svg"),
     ];
     cacheImages(images);
+    setTimeout(() => setIsReady(true), delay);
   }, []);
   return <div className="body">{isReady ? children : <Loader />}</div>;
 };

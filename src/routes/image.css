@@ -1,3 +1,4 @@
 .bgIntro {
-    background-image: url("../images/Intro/introbg.svg");
+  background-image: url("../images/Intro/introbg.svg");
+  background-repeat: no-repeat;
 }
