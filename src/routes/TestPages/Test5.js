@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import TestSheet from "../../components/TestSheet";
 import LoaderContainer from "../../components/LoaderContainer";
 import "../../static/css/styles.css";
 import "./TestBg.css";
+import Loader from "../../components/Loader";
 
 const Test5 = () => {
   const src = require("../../images/qq/5.png");
