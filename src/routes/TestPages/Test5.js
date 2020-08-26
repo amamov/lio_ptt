@@ -6,9 +6,14 @@ import Loader from "../../components/Loader";
 
 const Test5 = () => {
   const src = require("../../images/qq/5.png");
-  const [isReady, setIsReady] = useState(false);
-  const onImageLoaded = () => {
-    setIsReady(true);
+  const src2 = require("../../images/w.svg/w.svg");
+  const [isReady1, setIsReady1] = useState(false);
+  const onImageLoaded1 = () => {
+    setIsReady1(true);
+  };
+  const [isReady2, setIsReady2] = useState(false);
+  const onImageLoaded2 = () => {
+    setIsReady2(true);
   };
   return (
     <div className="body">
@@ -16,10 +21,17 @@ const Test5 = () => {
         src={src}
         alt="Lio"
         title="Lio"
-        className="absolute w-375px"
-        onLoad={onImageLoaded}
+        className="absolute w-375px z-0"
+        onLoad={onImageLoaded1}
       />
-      {isReady ? (
+      <img
+        src={src2}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-10"
+        onLoad={onImageLoaded2}
+      />
+      {isReady1 && isReady2 ? (
         <div className="w-375px h-667px p-12 text-black bg3">
           <div className="mt-64">
             <TestSheet
