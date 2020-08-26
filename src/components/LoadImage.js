@@ -28,10 +28,10 @@ const Prestart = () => {
   };
   return (
     <div>
-      <img src={src[0]} onLoad={onImageLoaded1} />
-      <img src={src[1]} onLoad={onImageLoaded2} />
-      <img src={src[2]} onLoad={onImageLoaded3} />
-      <img src={src[3]} onLoad={onImageLoaded4} />
+      <img src={src[0]} alt="lio" onLoad={onImageLoaded1} />
+      <img src={src[1]} alt="lio" onLoad={onImageLoaded2} />
+      <img src={src[2]} alt="lio" onLoad={onImageLoaded3} />
+      <img src={src[3]} alt="lio" onLoad={onImageLoaded4} />
       {/* <img src={src[4]} onLoad={onImageLoaded5} /> */}
       {isReady1 && isReady2 && isReady3 && isReady4 ? null : <Loader />}
     </div>
