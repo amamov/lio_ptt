@@ -1,5 +1,5 @@
 import React from "react";
-import { CubeGrid, Circular } from "styled-loaders-react";
+import { CubeGrid } from "styled-loaders-react";
 import "../static/css/styles.css";
 
 const Loader = () => {
