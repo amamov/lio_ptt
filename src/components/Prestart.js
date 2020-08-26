@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../static/css/styles.css";
 import Loader from "./Loader";
 
 const Prestart = () => {
-  const src = useState(require("../images/Start/prebg.svg"));
+  const src = require("../images/Start/prebg.svg");
   const [isReady, setIsReady] = useState(false);
   const onImageLoaded = () => {
     setIsReady(true);

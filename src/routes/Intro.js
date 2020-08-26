@@ -7,7 +7,7 @@ const Intro = () => {
   const PT_LS = "personality_type";
   localStorage.setItem(PT_LS, JSON.stringify({ A: 0, B: 0, C: 0, D: 0 })); //초기화
 
-  const src = useState(require("../images/Intro/introbg.svg"));
+  const src = require("../images/Intro/introbg.svg");
   const [isReady, setIsReady] = useState(false);
   const onImageLoaded = () => {
     setIsReady(true);
