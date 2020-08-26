@@ -1,27 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import TestSheet from "../../components/TestSheet";
-import LoaderContainer from "../../components/LoaderContainer";
 import "../../static/css/styles.css";
-import "./TestBg.css";
+import Loader from "../../components/Loader";
 
 const Test8 = () => {
+  const src1 = require("../../images/q/8.png");
+  const src2 = require("../../images/w/8.svg");
+  const [isReady1, setIsReady1] = useState(false);
+  const onImageLoaded1 = () => {
+    setIsReady1(true);
+  };
+  const [isReady2, setIsReady2] = useState(false);
+  const onImageLoaded2 = () => {
+    setIsReady2(true);
+  };
   return (
-    <LoaderContainer>
-      <div className="w-375px h-667px p-12 bg8">
-        <div className="mt-56">
-          <TestSheet
-            one={"매운 음식을 시켜먹는다."}
-            two={"이불 속에 들어간다."}
-            three={"슬라임을 만지작 거린다."}
-            four={"샤워를 하면서 좋아하는 노래를 부른다.(듣는다.)"}
-            nextHrefName={"/#/test9"}
-            btColor={"text-black"}
-          >
-            <div className="w-80% progress"></div>
-          </TestSheet>
+    <div className="body">
+      <img
+        src={src1}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-0"
+        onLoad={onImageLoaded1}
+      />
+      <img
+        src={src2}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-10"
+        onLoad={onImageLoaded2}
+      />
+      {isReady1 && isReady2 ? (
+        <div className="w-375px h-667px p-12 text-black z-30">
+          <div className="mt-64">
+            <TestSheet
+              one={"매운 음식을 시켜먹는다."}
+              two={"이불 속에 들어간다."}
+              three={"슬라임을 만지작 거린다."}
+              four={"샤워를 하면서 좋아하는 노래를 부른다.(듣는다.)"}
+              nextHrefName={"/#/test9"}
+              btColor={"text-black"}
+            />
+          </div>
         </div>
-      </div>
-    </LoaderContainer>
+      ) : (
+        <Loader />
+      )}
+    </div>
   );
 };
 

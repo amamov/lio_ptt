@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Loader from "../../components/Loader";
 import "../../static/css/styles.css";
-import "./TestBg.css";
+import Loader from "../../components/Loader";
 
 const RT_LS = "result_types";
 let rt_list = [];
