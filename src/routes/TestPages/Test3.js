@@ -1,25 +1,37 @@
 import React, { useState } from "react";
 import TestSheet from "../../components/TestSheet";
-import Loader from "../../components/Loader";
 import "../../static/css/styles.css";
+import Loader from "../../components/Loader";
 
 const Test3 = () => {
-  const src = require("../../images/TestPage/3.svg");
-  const [isReady, setIsReady] = useState(false);
-  const onImageLoaded = () => {
-    setIsReady(true);
+  const src1 = require("../../images/q/8.png");
+  const src2 = require("../../images/w/8.svg");
+  const [isReady1, setIsReady1] = useState(false);
+  const onImageLoaded1 = () => {
+    setIsReady1(true);
+  };
+  const [isReady2, setIsReady2] = useState(false);
+  const onImageLoaded2 = () => {
+    setIsReady2(true);
   };
   return (
     <div className="body">
       <img
-        src={src}
+        src={src1}
         alt="Lio"
         title="Lio"
-        className="absolute w-375px"
-        onLoad={onImageLoaded}
+        className="absolute w-375px z-0"
+        onLoad={onImageLoaded1}
       />
-      {isReady ? (
-        <div className="w-375px h-667px p-12 text-black bg3">
+      <img
+        src={src2}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-10"
+        onLoad={onImageLoaded2}
+      />
+      {isReady1 && isReady2 ? (
+        <div className="w-375px h-667px p-12 text-black z-30">
           <div className="mt-64">
             <TestSheet
               one={"내 책상 주변을 정리한다."}

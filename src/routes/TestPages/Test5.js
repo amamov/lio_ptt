@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import TestSheet from "../../components/TestSheet";
 import "../../static/css/styles.css";
-import "./TestBg.css";
 import Loader from "../../components/Loader";
 
 const Test5 = () => {
-  const src = require("../../images/qq/5.png");
-  const src2 = require("../../images/w.svg/w.svg");
+  const src1 = require("../../images/q/10.png");
+  const src2 = require("../../images/w/10.svg");
   const [isReady1, setIsReady1] = useState(false);
   const onImageLoaded1 = () => {
     setIsReady1(true);
@@ -18,7 +17,7 @@ const Test5 = () => {
   return (
     <div className="body">
       <img
-        src={src}
+        src={src1}
         alt="Lio"
         title="Lio"
         className="absolute w-375px z-0"
@@ -32,7 +31,7 @@ const Test5 = () => {
         onLoad={onImageLoaded2}
       />
       {isReady1 && isReady2 ? (
-        <div className="w-375px h-667px p-12 text-black bg3">
+        <div className="w-375px h-667px p-12 text-black z-30">
           <div className="mt-64">
             <TestSheet
               one={"가장 친한 친구에게 전화를 걸어 잡담을 한다."}

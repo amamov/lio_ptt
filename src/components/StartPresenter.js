@@ -3,7 +3,6 @@ import "../static/css/styles.css";
 import "../static/css/fonts.css";
 import Prestart from "./Prestart";
 import Andstart from "./AndStart";
-import LoadImage from "./LoadImage";
 
 const StartPresenter = () => {
   const [timeDelay, setTimeDelay] = useState(true);
@@ -14,12 +13,7 @@ const StartPresenter = () => {
     }, 3000);
   }, []);
 
-  return (
-    <>
-      <LoadImage />
-      {timeDelay ? <Prestart /> : <Andstart />}
-    </>
-  );
+  return timeDelay ? <Prestart /> : <Andstart />;
 };
 
 export default StartPresenter;
