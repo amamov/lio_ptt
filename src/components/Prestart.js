@@ -3,7 +3,7 @@ import "../static/css/styles.css";
 import Loader from "./Loader";
 
 const Prestart = () => {
-  const src = require("../images/Start/prebg.svg");
+  const src = require("../images/1.svg");
   const [isReady, setIsReady] = useState(false);
   const onImageLoaded = () => {
     setIsReady(true);
