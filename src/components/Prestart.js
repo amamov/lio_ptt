@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../static/css/styles.css";
+import Loader from "./Loader";
 
 const Prestart = () => {
+  const [src, setSrc] = useState(require("../images/Start/prebg.svg"));
+  const [isReady, setIsReady] = useState(false);
+  const onImageLoaded = () => {
+    setIsReady(true);
+  };
   return (
     <div className="flex flex-col relative w-375px h-1100px">
       <img
-        src={require("../images/Start/prebg.svg")}
+        src={src}
         alt="Lio"
         title="Lio"
         className="absolute w-375px"
+        onLoad={onImageLoaded}
       />
-      <div className=""></div>
+      {!isReady && <Loader />}
     </div>
   );
 };

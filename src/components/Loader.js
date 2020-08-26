@@ -9,8 +9,8 @@ import "../static/css/styles.css";
 
 const Loader = () => {
   return (
-    <div className="body h-screen">
-      <div id="loader" className="text-sm"></div>
+    <div className="body w-375px h-667px items-center justify-center">
+      <div id="loader" className="text-sm absolute z-50"></div>
     </div>
   );
 };
