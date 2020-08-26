@@ -4,7 +4,7 @@ import Loader from "../../components/Loader";
 import "../../static/css/styles.css";
 
 const Test3 = () => {
-  const [src, setSrc] = useState(require("../../images/TestPage/3.svg"));
+  const src = useState(require("../../images/TestPage/3.svg"));
   const [isReady, setIsReady] = useState(false);
   const onImageLoaded = () => {
     setIsReady(true);
