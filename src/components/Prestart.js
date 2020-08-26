@@ -6,10 +6,9 @@ const Prestart = () => {
     <div className="flex flex-col relative w-375px h-1100px">
       <img
         src={require("../images/Start/prebg.svg")}
-        // src={require("../images/3.svg")}
         alt="Lio"
         title="Lio"
-        className="absolute"
+        className="absolute w-375px"
       />
       <div className=""></div>
     </div>
