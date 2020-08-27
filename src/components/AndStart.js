@@ -4,45 +4,38 @@ import "../static/css/styles.css";
 import Loader from "./Loader";
 
 const Andstart = () => {
-  const src1 = require("../images/Start/bg22.png");
-  const src2 = require("../images/Start/h.svg");
-  const [isReady1, setIsReady1] = useState(false);
-  const [isReady2, setIsReady2] = useState(false);
+  const src = require("../images/Start/bg22.png");
+  const [isReady, setIsReady] = useState(false);
   const onImageLoaded1 = () => {
-    setIsReady1(true);
+    setIsReady(true);
   };
-  const onImageLoaded2 = () => {
-    setIsReady2(true);
-  };
+
   return (
-    <>
-      {isReady1 && isReady2 ? (
-        <div className="flex flex-col relative items-center w-375px h-667px">
+    <div className="flex flex-col relative items-center w-375px h-667px">
+      <img
+        src={src}
+        type=""
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375 h-667px z-0"
+        onLoad={onImageLoaded1}
+      />
+      {isReady ? (
+        <Link
+          to={{ pathname: "/intro" }}
+          style={{ position: "absolute", bottom: 95 }}
+        >
           <img
-            src={src1}
-            type=""
+            src={require("../images/Start/h.svg")}
             alt="Lio"
             title="Lio"
-            className="w-375 h-667px"
-            onLoad={onImageLoaded1}
+            className="animate-pulse"
           />
-          <Link
-            to={{ pathname: "/intro" }}
-            style={{ position: "absolute", bottom: 95 }}
-          >
-            <img
-              src={src2}
-              alt="Lio"
-              title="Lio"
-              className="animate-pulse"
-              onLoad={onImageLoaded2}
-            />
-          </Link>
-        </div>
+        </Link>
       ) : (
         <Loader />
       )}
-    </>
+    </div>
   );
 };
 
