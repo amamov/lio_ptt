@@ -38,7 +38,8 @@ const Final = () => {
         className="absolute w-375px z-10"
         onLoad={onImageLoaded}
       />
-      <div className="w-375px h-667px p-12 z-30">{!isReady && <Loader />}</div>
+      <div className="w-375px h-667px p-12 z-30"></div>
+      {!isReady && <Loader />}
     </div>
   );
 };
