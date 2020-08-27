@@ -40,9 +40,12 @@ const Final = () => {
       />
 
       {isReady ? (
-        <div className="w-375px h-667px z-30">
-          <Link to={{ pathname: "/intro" }} class="move-bt">
-            다시 검사하기
+        <div className="w-375px h-667px flex justify-center z-30">
+          <Link
+            to={{ pathname: "/intro" }}
+            style={{ width: 70, height: 70, marginTop: 535 }}
+          >
+            <div></div>
           </Link>
         </div>
       ) : (
