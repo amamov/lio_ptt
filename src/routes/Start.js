@@ -7,7 +7,9 @@ import StartPresenter from "../components/StartPresenter";
 const Start = () => {
   return (
     <LoaderContainer>
-      <StartPresenter />
+      <div className="body">
+        <StartPresenter />
+      </div>
     </LoaderContainer>
   );
 };
