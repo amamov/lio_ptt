@@ -6,6 +6,14 @@
     <!-- <link rel="stylesheet" href="./src/static/css/styles.css" /> -->
     <title>Playground</title>
     <style>
+      path {
+        fill: #cfceca;
+        /* fill: #f26431; */
+      }
+      .pupil {
+        fill: #f26431;
+      }
+
       #loader {
         position: absolute;
         top: 0;
@@ -18,42 +26,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #e9e8e3;
+        background: #1c1c35;
         z-index: 99;
         -webkit-animation: offscreen 0.5s 15s forwards;
         animation: offscreen 0.5s 15s forwards;
       }
-      #refresher {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        opacity: 0;
-        -webkit-animation: show 0.15s 16s forwards;
-        animation: show 0.15s 16s forwards;
-      }
-      /* .refresh {
-        color: black;
-        font-size: 2rem;
-        text-transform: uppercase;
-      } */
       .face {
         width: 270px;
         height: 270px;
       }
       /*
-----------------------------------------------
-SVG 
-----------------------------------------------
-*/
+      ----------------------------------------------
+      SVG
+      ----------------------------------------------
+      */
       .head {
         transform-origin: 135px 135px;
         transform: scale(0);
@@ -132,10 +118,10 @@ SVG
         animation: happy 12.9s 1s ease-in forwards;
       }
       /*
-----------------------------------------------
-LOADING BAR 
-----------------------------------------------
-*/
+      ----------------------------------------------
+      LOADING BAR
+      ----------------------------------------------
+      */
       .loading-bar {
         position: relative;
         margin-top: 4rem;
@@ -148,7 +134,7 @@ LOADING BAR
         top: 0;
         left: 0;
         width: 0;
-        background: #58585a;
+        background: #f26431;
         -webkit-animation: load 12.4s 1s forwards;
         animation: load 12.4s 1s forwards;
       }
@@ -158,10 +144,10 @@ LOADING BAR
         border-radius: 5px;
       }
       /*
-----------------------------------------------
-ANIMATIONS
-----------------------------------------------
-*/
+      ----------------------------------------------
+      ANIMATIONS
+      ----------------------------------------------
+      */
       @keyframes popup {
         0% {
           transform: scale(0);

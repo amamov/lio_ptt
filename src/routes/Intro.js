@@ -34,7 +34,7 @@ const Intro = () => {
           </div>
         </div>
       ) : (
-        <div className="absolute z-50 body h-screen flex items-center justify-centerbg-black">
+        <div className="body h-screen flex items-center justify-center bg-black">
           <div>
             <CubeGrid color="#ffffff" size="30px" />
           </div>
