@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import Start from "./routes/Start";
 import Intro from "./routes/Intro";
 import Test1 from "./routes/TestPages/Test1";
@@ -20,7 +20,7 @@ import Final from "./routes/Final";
 
 export default () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Route path="/" exact={true} component={Start} />
       <Route path="/intro" exact={true} component={Intro} />
       <Route path="/test1" exact={true} component={Test1} />
@@ -38,6 +38,6 @@ export default () => {
       <Route path="/resultC" exact={true} component={Result_C} />
       <Route path="/resultD" exact={true} component={Result_D} />
       <Route path="/final" exact={true} component={Final} />
-    </HashRouter>
+    </BrowserRouter>
   );
 };
