@@ -29,6 +29,7 @@ const Prestart = () => {
         className="absolute w-375px z-10"
         onLoad={onImageLoaded2}
       />
+
       {() => {
         if (!isReady1 && !isReady2) {
           return <Loader />;

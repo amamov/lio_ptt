@@ -25,6 +25,9 @@ const Andstart = () => {
           to={{ pathname: "/intro" }}
           style={{ position: "absolute", bottom: 95 }}
         >
+          <div className="w-full pl-3">
+            <span className="text-xs">CLICK ME!</span>
+          </div>
           <img
             src={require("../images/Start/h.svg")}
             alt="Lio"
