@@ -16,29 +16,32 @@ const Andstart = () => {
   };
   return (
     <>
-      <div className="flex flex-col relative items-center w-375px h-667px">
-        <img
-          src={src1}
-          type=""
-          alt="Lio"
-          title="Lio"
-          className="w-375 h-667px"
-          onLoad={onImageLoaded1}
-        />
-        <Link
-          to={{ pathname: "/intro" }}
-          style={{ position: "absolute", bottom: 95 }}
-        >
+      {isReady1 && isReady2 ? (
+        <div className="flex flex-col relative items-center w-375px h-667px">
           <img
-            src={src2}
+            src={src1}
+            type=""
             alt="Lio"
             title="Lio"
-            className="animate-pulse"
-            onLoad={onImageLoaded2}
+            className="w-375 h-667px"
+            onLoad={onImageLoaded1}
           />
-        </Link>
-      </div>
-      {isReady1 && isReady2 ? null : <Loader />}
+          <Link
+            to={{ pathname: "/intro" }}
+            style={{ position: "absolute", bottom: 95 }}
+          >
+            <img
+              src={src2}
+              alt="Lio"
+              title="Lio"
+              className="animate-pulse"
+              onLoad={onImageLoaded2}
+            />
+          </Link>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </>
   );
 };
