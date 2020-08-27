@@ -4,7 +4,7 @@ import "../static/css/styles.css";
 
 const Loader = () => {
   return (
-    <div className="w-375px h-screen flex items-center justify-center bg-black">
+    <div className="w-375px h-screen flex items-center justify-center bg-Navy">
       <div className="absolute z-50">
         <CubeGrid color="#ffffff" size="30px" />
       </div>
