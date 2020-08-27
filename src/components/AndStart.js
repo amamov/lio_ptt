@@ -4,7 +4,7 @@ import "../static/css/styles.css";
 import Loader from "./Loader";
 
 const Andstart = () => {
-  const src1 = require("../images/Start/bg2.svg");
+  const src1 = require("../images/Start/bg22.png");
   const src2 = require("../images/Start/h.svg");
   const src3 = require("../images/Start/m.svg");
   const [isReady1, setIsReady1] = useState(false);
