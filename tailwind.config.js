@@ -7,9 +7,10 @@ module.exports = {
         Navy: "#1c1c35",
         white: "#d6d3eb",
         blue: {
-          "1": "#413ece",
-          "2": "#373c7f",
+          1: "#413ece",
+          2: "#373c7f",
         },
+        ffffff: "#ffffff",
         startBg: "#131120",
       },
       spacing: {

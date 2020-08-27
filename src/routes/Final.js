@@ -11,19 +11,6 @@ const Final = () => {
   };
   return (
     <div className="body">
-      {/* <div id="container" class="container justify-center">
-        <Link to={{ pathname: "/intro" }} class="move-bt">
-          다시 검사하기
-        </Link>
-        <a
-          href="https://www.google.com"
-          class="move-bt"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          텀블벅 바로가기
-        </a>
-      </div> */}
       <img
         src={src}
         alt="Lio"
@@ -40,10 +27,19 @@ const Final = () => {
       />
 
       {isReady ? (
-        <div className="w-375px h-667px flex justify-center z-30">
+        <div className="w-375px h-667px flex flex-col items-center z-30">
+          <a
+            href="https://www.google.com"
+            class="bg-ffffff w-56 h-12 mt-330px flex justify-center items-center rounded-md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-blue-1">블러처리는 나중에, 텀블벅버튼</span>
+          </a>
+
           <Link
             to={{ pathname: "/intro" }}
-            style={{ width: 70, height: 70, marginTop: 535 }}
+            style={{ width: 70, height: 70, marginTop: 150 }}
           >
             <div></div>
           </Link>
