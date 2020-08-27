@@ -151,28 +151,6 @@ html {
   -webkit-animation: offscreen 0.5s 15s forwards;
   animation: offscreen 0.5s 15s forwards;
 }
-#refresher {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  opacity: 0;
-  -webkit-animation: show 0.15s 16s forwards;
-  animation: show 0.15s 16s forwards;
-}
-/* .refresh {
-  color: black;
-  font-size: 2rem;
-  text-transform: uppercase;
-} */
 .face {
   width: 270px;
   height: 270px;

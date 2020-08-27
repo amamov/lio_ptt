@@ -118,9 +118,6 @@ const Loader = () => {
         </div>
         <div class="loading-bar"></div>
       </div>
-      <div id="refresher">
-        <p class="refresh">refreshㄹ니ㅏ위머ㅜ러ㅏ무</p>
-      </div>
     </>
   );
 };

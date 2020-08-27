@@ -22,15 +22,18 @@ const Intro = () => {
           className="absolute w-375px"
           onLoad={onImageLoaded}
         />
-        <div className="flex flex-col w-375px h-1300px justify-end items-center">
-          <Link to={{ pathname: "./test1" }} style={{ zIndex: 30 }}>
-            <div className="bg-blue-2 w-286px h-48px flex justify-center items-center rounded-md mb-8">
-              <span>테스트 시작하기</span>
-            </div>
-          </Link>
-        </div>
       </div>
-      {isReady ? null : (
+      {isReady ? (
+        <div className="body">
+          <div className="flex flex-col w-375px h-1300px justify-end items-center">
+            <Link to={{ pathname: "./test1" }} style={{ zIndex: 30 }}>
+              <div className="bg-blue-2 w-286px h-48px flex justify-center items-center rounded-md mb-8">
+                <span>테스트 시작하기</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      ) : (
         <div className="absolute z-50 body h-screen flex items-center justify-centerbg-black">
           <div>
             <CubeGrid color="#ffffff" size="30px" />
