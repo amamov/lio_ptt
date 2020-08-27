@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../static/css/styles.css";
 import { Link } from "react-router-dom";
-import CubeGrid from "styled-loaders-react/lib/components/CubeGrid";
+import Cube from "styled-loaders-react/lib/components/Cube";
 
 const Result_D = () => {
   const src = require("../../images/Result/D.svg");
@@ -25,7 +25,7 @@ const Result_D = () => {
           <div className="flex flex-col w-375px h-1100px justify-end items-center">
             <Link to={{ pathname: "./final" }} style={{ zIndex: 30 }}>
               <div className="bg-blue-2 w-286px h-48px flex justify-center items-center rounded-md mb-8">
-                <span>테스트 시작하기</span>
+                <span>버튼</span>
               </div>
             </Link>
           </div>
@@ -33,7 +33,7 @@ const Result_D = () => {
       ) : (
         <div className="body h-screen flex items-center justify-center bg-black">
           <div>
-            <CubeGrid color="#ffffff" size="30px" />
+            <Cube color="#f26431" size="30px" />
           </div>
         </div>
       )}

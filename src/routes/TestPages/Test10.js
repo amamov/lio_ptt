@@ -64,8 +64,20 @@ const Test10 = () => {
 
   return (
     <div className="body">
+      <img
+        src={require("../../images/q/10.png")}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-0"
+      />
+      <img
+        src={require("../../images/w/10.svg")}
+        alt="Lio"
+        title="Lio"
+        className="absolute w-375px z-10"
+      />
       {isReady ? (
-        <div className="w-375px h-667px p-12 bg8">
+        <div className="w-375px h-667px p-12 z-30">
           <div className="mt-56">
             <div className="flex flex-col items-start">
               <button
@@ -73,6 +85,7 @@ const Test10 = () => {
                 style={{ display: showA() }}
                 onClick={(event) => handleClickA(event)}
               >
+                <span className="mr-2">1</span>
                 떡볶이
               </button>
 
@@ -81,6 +94,7 @@ const Test10 = () => {
                 style={{ display: showB() }}
                 onClick={(event) => handleClickB(event)}
               >
+                <span className="mr-2">2</span>
                 셀러드
               </button>
 
@@ -89,6 +103,7 @@ const Test10 = () => {
                 style={{ display: showC() }}
                 onClick={(event) => handleClickC(event)}
               >
+                <span className="mr-2">3</span>
                 정갈한 가정식
               </button>
 
@@ -97,6 +112,7 @@ const Test10 = () => {
                 style={{ display: showD() }}
                 onClick={(event) => handleClickD(event)}
               >
+                <span className="mr-2">4</span>
                 내일 생각하자.. 인생이란...
               </button>
             </div>

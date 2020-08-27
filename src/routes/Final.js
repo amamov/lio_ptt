@@ -6,7 +6,7 @@ const Final = () => {
   return (
     <div className="body">
       <div id="container" class="container justify-center">
-        <Link to={{ pathname: "/" }} class="move-bt">
+        <Link to={{ pathname: "/intro" }} class="move-bt">
           다시 검사하기
         </Link>
         <a

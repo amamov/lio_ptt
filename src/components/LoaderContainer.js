@@ -19,7 +19,8 @@ const LoaderContainer = ({ children }) => {
 
   useEffect(() => {
     const images = [
-      require("../images/Start/prebg.svg"),
+      require("../images/Start/prebg.png"),
+      require("../images/Start/preele.svg"),
       require("../images/Intro/introbg.svg"),
       require("../images/Start/h.svg"),
       require("../images/q/1.png"),
