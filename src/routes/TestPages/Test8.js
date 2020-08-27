@@ -31,15 +31,16 @@ const Test8 = () => {
         onLoad={onImageLoaded2}
       />
       {isReady1 && isReady2 ? (
-        <div className="w-375px h-667px p-12 text-black z-30">
+        <div className="w-375px h-667px p-12 text-ffffff z-30">
           <div className="mt-64">
             <TestSheet
               one={"매운 음식을 시켜먹는다."}
               two={"이불 속에 들어간다."}
               three={"슬라임을 만지작 거린다."}
-              four={"샤워를 하면서 좋아하는 노래를 부른다.(듣는다.)"}
+              four={"샤워를 하면서 좋아하는 노래를 부른다."}
               nextHrefName={"/#/test9"}
               btColor={"text-black"}
+              mt={"mt-10"}
             />
           </div>
         </div>

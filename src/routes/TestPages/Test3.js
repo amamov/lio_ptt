@@ -39,7 +39,8 @@ const Test3 = () => {
               three={"새로운 친구들을 만난다."}
               four={"낮잠을 잔다."}
               nextHrefName={"/#/test4"}
-              btColor={"text-black"}
+              btColor={"text-orange "}
+              mt={"mt-12"}
             />
           </div>
         </div>

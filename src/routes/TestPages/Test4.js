@@ -32,7 +32,7 @@ const Test4 = () => {
       />
       {isReady1 && isReady2 ? (
         <div className="w-375px h-667px p-12 z-30">
-          <div className="mt-64">
+          <div className="mt-56">
             <TestSheet
               one={"바로 일어나서 욕을 한다."}
               two={"옷이 더러워졌는지 확인한다."}
@@ -40,6 +40,7 @@ const Test4 = () => {
               four={"아무일도 없었던 것 처럼 유유히 앞칸으로 옮긴다."}
               nextHrefName={"/#/test5"}
               btColor={"text-orange"}
+              mt={"mt-12"}
             />
           </div>
         </div>

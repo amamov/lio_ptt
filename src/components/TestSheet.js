@@ -4,7 +4,15 @@ import "../static/css/styles.css";
 const PT_LS = "personality_type";
 const RT_LS = "result_types";
 
-const TestSheet = ({ one, two, three, four, nextHrefName, btColor }) => {
+const TestSheet = ({
+  one,
+  two,
+  three,
+  four,
+  nextHrefName,
+  btColor,
+  mt = "mt-8",
+}) => {
   const [pt_obj, setPt_obj] = useState(JSON.parse(localStorage.getItem(PT_LS)));
 
   const goToResultPage = useCallback(
@@ -83,35 +91,37 @@ const TestSheet = ({ one, two, three, four, nextHrefName, btColor }) => {
   return (
     <div className="flex flex-col items-start">
       <button
-        className="text-left animate-pulse"
+        className="text-left animate-pulse w-full"
         onClick={(event) => handleClickA(event)}
       >
-        <span className={`${btColor} mr-2`}>1</span>
-        {one}
+        <span className={`${btColor} mr-2 text-extrabold text-16px`}>1</span>
+        <span className="text-16px text-extrabold">{one}</span>
       </button>
 
       <button
-        className="text-left mt-8 animate-pulse"
+        className={`text-left ${mt} animate-pulse w-full`}
         onClick={(event) => handleClickB(event)}
       >
-        <span className={`${btColor} mr-2`}>2</span>
-        {two}
+        <span className={`${btColor} mr-2 text-extrabold text-16px`}>2</span>
+        <span className="text-16px text-extrabold">{two}</span>
       </button>
 
       <button
-        className="text-left mt-8 animate-pulse"
+        className={`text-left ${mt} animate-pulse w-full`}
         onClick={(event) => handleClickC(event)}
       >
-        <span className={`${btColor} mr-2`}>3</span>
-        {three}
+        <span className={`${btColor} mr-2 text-extrabold text-16px`}>3</span>
+        <span className="text-16px text-extrabold">{three}</span>
       </button>
 
       <button
-        className="text-left mt-8 animate-pulse"
+        className={`text-left ${mt} animate-pulse w-full`}
         onClick={(event) => handleClickD(event)}
       >
-        <span className={`${btColor} mr-2`}>4</span>
-        {four}
+        <span className={`${btColor} mr-2 text-extrabold text-16px w-full`}>
+          4
+        </span>
+        <span className="text-16px text-extrabold">{four}</span>
       </button>
     </div>
   );

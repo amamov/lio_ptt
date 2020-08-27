@@ -31,7 +31,7 @@ const Test6 = () => {
         onLoad={onImageLoaded2}
       />
       {isReady1 && isReady2 ? (
-        <div className="w-375px h-667px p-12 text-black z-30">
+        <div className="w-375px h-667px p-12 text-ffffff z-30">
           <div className="mt-64">
             <TestSheet
               one={"반려견과 놀아준다."}
@@ -40,6 +40,7 @@ const Test6 = () => {
               four={"저녁거리가 뭐가 있는지 냉장고를 열어본다."}
               nextHrefName={"/#/test7"}
               btColor={"text-orange"}
+              mt={"mt-12"}
             />
           </div>
         </div>

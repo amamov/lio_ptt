@@ -40,6 +40,7 @@ const Test2 = () => {
               four={"누워서 뒹굴거린다."}
               nextHrefName={"/#/test3"}
               btColor={"text-orange"}
+              mt={"mt-10"}
             />
           </div>
         </div>
