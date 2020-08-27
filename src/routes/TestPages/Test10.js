@@ -7,11 +7,6 @@ let rt_list = [];
 
 const Test10 = () => {
   const [isReady, setIsReady] = useState(false);
-  const src = require("../../images/q/10.png");
-  const [imageReady, setImageReady] = useState(false);
-  const onImageLoaded = () => {
-    setImageReady(true);
-  };
 
   useEffect(() => {
     rt_list = JSON.parse(localStorage.getItem(RT_LS));
@@ -68,13 +63,12 @@ const Test10 = () => {
   };
 
   return (
-    <div className="body md:h-screen md:items-center">
+    <div className="body sm:h-screen sm:items-center">
       <img
-        src={src}
+        src={require("../../images/q/10.png")}
         alt="Lio"
         title="Lio"
         className="absolute w-375px z-0"
-        onLoad={onImageLoaded}
       />
       <img
         src={require("../../images/w/10.svg")}
@@ -82,55 +76,52 @@ const Test10 = () => {
         title="Lio"
         className="absolute w-375px z-10"
       />
-      {() => {
-        if (imageReady) {
-          return isReady ? (
-            <div className="w-375px h-667px p-12 z-30">
-              <div className="mt-56">
-                <div className="flex flex-col items-start">
-                  <button
-                    className="text-left animate-pulse"
-                    style={{ display: showA() }}
-                    onClick={(event) => handleClickA(event)}
-                  >
-                    <span className="mr-2">1</span>
-                    떡볶이
-                  </button>
 
-                  <button
-                    className="text-left mt-3 animate-pulse"
-                    style={{ display: showB() }}
-                    onClick={(event) => handleClickB(event)}
-                  >
-                    <span className="mr-2">2</span>
-                    셀러드
-                  </button>
+      {isReady ? (
+        <div className="w-375px h-667px p-12 z-30">
+          <div className="mt-56">
+            <div className="flex flex-col items-start">
+              <button
+                className="text-left animate-pulse"
+                style={{ display: showA() }}
+                onClick={(event) => handleClickA(event)}
+              >
+                <span className="mr-2">1</span>
+                떡볶이
+              </button>
 
-                  <button
-                    className="text-left mt-3 animate-pulse"
-                    style={{ display: showC() }}
-                    onClick={(event) => handleClickC(event)}
-                  >
-                    <span className="mr-2">3</span>
-                    정갈한 가정식
-                  </button>
+              <button
+                className="text-left mt-3 animate-pulse"
+                style={{ display: showB() }}
+                onClick={(event) => handleClickB(event)}
+              >
+                <span className="mr-2">2</span>
+                셀러드
+              </button>
 
-                  <button
-                    className="text-left mt-3 animate-pulse"
-                    style={{ display: showD() }}
-                    onClick={(event) => handleClickD(event)}
-                  >
-                    <span className="mr-2">4</span>
-                    내일 생각하자.. 인생이란...
-                  </button>
-                </div>
-              </div>
+              <button
+                className="text-left mt-3 animate-pulse"
+                style={{ display: showC() }}
+                onClick={(event) => handleClickC(event)}
+              >
+                <span className="mr-2">3</span>
+                정갈한 가정식
+              </button>
+
+              <button
+                className="text-left mt-3 animate-pulse"
+                style={{ display: showD() }}
+                onClick={(event) => handleClickD(event)}
+              >
+                <span className="mr-2">4</span>
+                내일 생각하자.. 인생이란...
+              </button>
             </div>
-          ) : (
-            <Loader />
-          );
-        }
-      }}
+          </div>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
