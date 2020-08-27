@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../static/css/styles.css";
 import Loader from "../components/Loader";
 
@@ -38,8 +38,16 @@ const Final = () => {
         className="absolute w-375px z-10"
         onLoad={onImageLoaded}
       />
-      {/* <div className="w-375px h-667px p-12 z-30"></div> */}
-      {!isReady && <Loader />}
+
+      {isReady ? (
+        <div className="w-375px h-667px z-30">
+          <Link to={{ pathname: "/intro" }} class="move-bt">
+            다시 검사하기
+          </Link>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
