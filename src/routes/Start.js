@@ -7,7 +7,7 @@ import StartPresenter from "../components/StartPresenter";
 const Start = () => {
   return (
     <LoaderContainer>
-      <div className="body">
+      <div className="body md:h-screen md:items-center">
         <StartPresenter />
       </div>
     </LoaderContainer>

@@ -14,7 +14,7 @@ const Prestart = () => {
     setIsReady2(true);
   };
   return (
-    <div className="flex flex-col relative w-375px h-1100px">
+    <div className="flex flex-col relative w-375px h-667px">
       <img
         src={src1}
         alt="Lio"

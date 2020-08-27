@@ -15,7 +15,7 @@ const Test2 = () => {
     setIsReady2(true);
   };
   return (
-    <div className="body">
+    <div className="body md:h-screen md:items-center">
       <img
         src={src1}
         alt="Lio"

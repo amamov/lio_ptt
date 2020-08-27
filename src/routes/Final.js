@@ -10,7 +10,7 @@ const Final = () => {
     setIsReady(true);
   };
   return (
-    <div className="body">
+    <div className="body md:h-screen md:items-center">
       <img
         src={src}
         alt="Lio"
