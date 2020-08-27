@@ -28,6 +28,7 @@ const TestSheet = ({ one, two, three, four, nextHrefName, btColor }) => {
         result_list.push(key);
       }
     });
+    console.log(result_list);
     goToResultPage(result_list);
   }, [pt_obj, goToResultPage]);
 
