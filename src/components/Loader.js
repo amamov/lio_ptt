@@ -6,7 +6,7 @@ const Loader = () => {
   return (
     <div className="w-375px h-screen flex items-center justify-center bg-Navy">
       <div className="absolute z-50">
-        <CubeGrid color="#f26431" size="30px" />
+        <CubeGrid color="#ffffff" size="30px" />
       </div>
     </div>
   );
