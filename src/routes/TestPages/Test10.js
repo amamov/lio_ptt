@@ -82,39 +82,48 @@ const Test10 = () => {
           <div className="mt-56">
             <div className="flex flex-col items-start">
               <button
-                className="text-left animate-pulse"
+                className="text-left animate-pulse w-full"
                 style={{ display: showA() }}
                 onClick={(event) => handleClickA(event)}
               >
-                <span className="mr-2">1</span>
-                떡볶이
+                <span className="text-orange mr-2 text-extrabold text-16px">
+                  1
+                </span>
+                <span className="text-16px text-extrabold">떡볶이</span>
               </button>
-
               <button
-                className="text-left mt-3 animate-pulse"
+                className="text-left animate-pulse w-full mt-10"
                 style={{ display: showB() }}
                 onClick={(event) => handleClickB(event)}
               >
-                <span className="mr-2">2</span>
-                셀러드
+                <span className="text-orange mr-2 text-extrabold text-16px">
+                  2
+                </span>
+                <span className="text-16px text-extrabold">셀러드</span>
               </button>
 
               <button
-                className="text-left mt-3 animate-pulse"
+                className="text-left animate-pulse w-full mt-10"
                 style={{ display: showC() }}
                 onClick={(event) => handleClickC(event)}
               >
-                <span className="mr-2">3</span>
-                정갈한 가정식
+                <span className="text-orange mr-2 text-extrabold text-16px">
+                  3
+                </span>
+                <span className="text-16px text-extrabold">정갈한 가정식</span>
               </button>
 
               <button
-                className="text-left mt-3 animate-pulse"
+                className="text-left animate-pulse w-full mt-10"
                 style={{ display: showD() }}
                 onClick={(event) => handleClickD(event)}
               >
-                <span className="mr-2">4</span>
-                내일 생각하자.. 인생이란...
+                <span className="text-orange mr-2 text-extrabold text-16px">
+                  4
+                </span>
+                <span className="text-16px text-extrabold">
+                  (내일 생각해야지..)
+                </span>
               </button>
             </div>
           </div>
