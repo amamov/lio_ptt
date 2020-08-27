@@ -6,18 +6,13 @@ import Loader from "./Loader";
 const Andstart = () => {
   const src1 = require("../images/Start/bg22.png");
   const src2 = require("../images/Start/h.svg");
-  const src3 = require("../images/Start/m.svg");
   const [isReady1, setIsReady1] = useState(false);
   const [isReady2, setIsReady2] = useState(false);
-  const [isReady3, setIsReady3] = useState(false);
   const onImageLoaded1 = () => {
     setIsReady1(true);
   };
   const onImageLoaded2 = () => {
     setIsReady2(true);
-  };
-  const onImageLoaded3 = () => {
-    setIsReady3(true);
   };
   return (
     <div className="flex flex-col relative items-center w-375px h-667px">
@@ -41,14 +36,7 @@ const Andstart = () => {
           onLoad={onImageLoaded2}
         />
       </Link>
-      <img
-        src={src3}
-        alt="Lio"
-        title="Lio"
-        className="absolute bottom-0 w-375px"
-        onLoad={onImageLoaded3}
-      />
-      {isReady1 && isReady2 && isReady3 ? null : <Loader />}
+      {isReady1 && isReady2 ? null : <Loader />}
     </div>
   );
 };
