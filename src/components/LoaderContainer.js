@@ -21,8 +21,9 @@ const LoaderContainer = ({ children }) => {
     const images = [
       require("../images/Start/prebg.png"),
       require("../images/Start/preele.svg"),
-      require("../images/Intro/introbg.svg"),
       require("../images/Start/h.svg"),
+      require("../images/Start/m.svg"),
+      require("../images/Intro/introbg.svg"),
       require("../images/q/1.png"),
       require("../images/w/1.svg"),
       require("../images/q/2.png"),
