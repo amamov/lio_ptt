@@ -26,7 +26,7 @@ const Andstart = () => {
           style={{ position: "absolute", bottom: 95 }}
         >
           <div className="w-full pl-3">
-            <span className="text-xs">CLICK ME!</span>
+            <span className="text-xs text-ffffff">CLICK ME!</span>
           </div>
           <img
             src={require("../images/Start/h.svg")}
