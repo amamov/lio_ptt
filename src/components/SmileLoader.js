@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <>
       <div id="loader">
-        <div class="face">
+        <div className="face">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -15,11 +15,11 @@ const Loader = () => {
             height="270px"
             viewBox="0.032 0 270 270"
             overflow="visible"
-            enable-background="new 0.032 0 270 270"
+            enableBackground="new 0.032 0 270 270"
           >
             <defs></defs>
             <g id="supervisior">
-              <g class="head">
+              <g className="head">
                 <path
                   fill="#58585A"
                   d="M135,10c33.389,0,64.778,13.002,88.388,36.612S260,101.611,260,135s-13.003,64.779-36.612,88.388
@@ -28,20 +28,20 @@ const Loader = () => {
                 />
               </g>
               <g id="eyeLeft">
-                <g class="eyeLeft">
+                <g className="eyeLeft">
                   <circle
-                    class="eye"
+                    className="eye"
                     fill="none"
                     stroke="#58585A"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeMiterlimit="10"
                     cx="66.063"
                     cy="127.51"
                     r="18.849"
                   />
                   <circle
-                    class="pupil"
+                    className="pupil"
                     fill="#58585A"
                     cx="66.063"
                     cy="127.511"
@@ -49,31 +49,31 @@ const Loader = () => {
                   />
                 </g>
                 <path
-                  class="closedLeft"
+                  className="closedLeft"
                   fill="none"
                   stroke="#58585A"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
                   d="
       M47.238,127.972c0.247,10.194,8.57,18.387,18.824,18.387s18.579-8.193,18.826-18.387"
                 />
               </g>
               <g id="eyeRight">
-                <g class="eyeRight">
+                <g className="eyeRight">
                   <circle
-                    class="eye"
+                    className="eye"
                     fill="none"
                     stroke="#58585A"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeMiterlimit="10"
                     cx="203.936"
                     cy="127.51"
                     r="18.849"
                   />
                   <circle
-                    class="pupil"
+                    className="pupil"
                     fill="#58585A"
                     cx="203.935"
                     cy="127.511"
@@ -81,34 +81,34 @@ const Loader = () => {
                   />
                 </g>
                 <path
-                  class="closedRight"
+                  className="closedRight"
                   fill="none"
                   stroke="#58585A"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
                   d="
       M185.11,127.972c0.247,10.194,8.571,18.387,18.824,18.387c10.255,0,18.579-8.193,18.826-18.387"
                 />
               </g>
-              <g class="mouth">
+              <g className="mouth">
                 <polyline
-                  class="bar"
+                  className="bar"
                   fill="none"
                   stroke="#58585A"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
                   points="
       111.532,232.832 135.032,232.832 158.532,232.832 "
                 />
                 <path
-                  class="smile"
+                  className="smile"
                   fill="none"
                   stroke="#58585A"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
                   d="
       M62.485,168.615c0.951,35.593,33.016,64.198,72.511,64.198c39.503,0,71.566-28.605,72.519-64.198"
                 />
@@ -116,7 +116,7 @@ const Loader = () => {
             </g>
           </svg>
         </div>
-        <div class="loading-bar"></div>
+        <div className="loading-bar"></div>
       </div>
     </>
   );
