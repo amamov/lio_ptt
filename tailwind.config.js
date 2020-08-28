@@ -8,7 +8,9 @@ module.exports = {
         white: "#d6d3eb",
         blue: {
           1: "#413ece",
-          2: "#373c7f",
+          2: "#33386E",
+          3: "#3731a3",
+          4: "#5656C4",
         },
         ffffff: "#ffffff",
         startBg: "#131120",

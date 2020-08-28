@@ -31,7 +31,7 @@ const Test4 = () => {
         onLoad={onImageLoaded2}
       />
       {isReady1 && isReady2 ? (
-        <div className="w-375px h-667px p-12 z-30">
+        <div className="w-375px h-667px p-12 z-30 text-ffffff">
           <div className="mt-56">
             <TestSheet
               one={"바로 일어나서 욕을 한다."}

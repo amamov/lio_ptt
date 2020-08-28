@@ -27,8 +27,8 @@ const Intro = () => {
         <div className="body">
           <div className="flex flex-col w-375px h-1300px justify-end items-center">
             <Link to={{ pathname: "./test1" }} style={{ zIndex: 30 }}>
-              <div className="bg-blue-2 w-286px h-48px flex justify-center items-center rounded-md mb-8">
-                <span>테스트 시작하기</span>
+              <div className="bg-blue-4 w-286px h-48px flex justify-center items-center rounded-md mb-8 introBt">
+                <span className="text-ffffff">스트레스 유형 진단하기</span>
               </div>
             </Link>
           </div>

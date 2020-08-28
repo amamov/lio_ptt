@@ -80,50 +80,52 @@ const Test10 = () => {
       {isReady ? (
         <div className="w-375px h-667px p-12 z-30">
           <div className="mt-56">
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start text-ffffff">
               <button
-                className="text-left animate-pulse w-full"
+                className="text-left animate-pulse w-full bt_hover"
                 style={{ display: showA() }}
                 onClick={(event) => handleClickA(event)}
               >
-                <span className="text-orange mr-2 text-extrabold text-16px">
-                  1
-                </span>
-                <span className="text-16px text-extrabold">떡볶이</span>
+                <div className="flex flex-row w-full items-center">
+                  <div className="bg-orange mr-2 w-2 h-2 rounded-md"></div>
+                  <span className="text-16px text-extrabold">떡볶이</span>
+                </div>
               </button>
               <button
-                className="text-left animate-pulse w-full mt-10"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showB() }}
                 onClick={(event) => handleClickB(event)}
               >
-                <span className="text-orange mr-2 text-extrabold text-16px">
-                  2
-                </span>
-                <span className="text-16px text-extrabold">셀러드</span>
+                <div className="flex flex-row w-full items-center">
+                  <div className="bg-orange mr-2 w-2 h-2 rounded-md"></div>
+                  <span className="text-16px text-extrabold">셀러드</span>
+                </div>
               </button>
 
               <button
-                className="text-left animate-pulse w-full mt-10"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showC() }}
                 onClick={(event) => handleClickC(event)}
               >
-                <span className="text-orange mr-2 text-extrabold text-16px">
-                  3
-                </span>
-                <span className="text-16px text-extrabold">정갈한 가정식</span>
+                <div className="flex flex-row w-full items-center">
+                  <div className="bg-orange mr-2 w-2 h-2 rounded-md"></div>
+                  <span className="text-16px text-extrabold">
+                    정갈한 가정식
+                  </span>
+                </div>
               </button>
 
               <button
-                className="text-left animate-pulse w-full mt-10"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showD() }}
                 onClick={(event) => handleClickD(event)}
               >
-                <span className="text-orange mr-2 text-extrabold text-16px">
-                  4
-                </span>
-                <span className="text-16px text-extrabold">
-                  (내일 생각해야지..)
-                </span>
+                <div className="flex flex-row w-full items-center">
+                  <div className="bg-orange mr-2 w-2 h-2 rounded-md"></div>
+                  <span className="text-16px text-extrabold">
+                    (내일 생각해야지..)
+                  </span>
+                </div>
               </button>
             </div>
           </div>

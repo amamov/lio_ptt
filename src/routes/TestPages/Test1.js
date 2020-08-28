@@ -32,7 +32,7 @@ const Test1 = () => {
       />
 
       {isReady1 && isReady2 ? (
-        <div className="w-375px h-667px p-12 z-30">
+        <div className="w-375px h-667px p-12 z-30 text-ffffff">
           <div className="mt-56">
             <TestSheet
               one={

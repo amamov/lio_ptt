@@ -30,16 +30,18 @@ const Final = () => {
         <div className="w-375px h-667px flex flex-col items-center z-30">
           <a
             href="https://www.google.com"
-            class="bg-ffffff w-56 h-12 mt-330px flex justify-center items-center rounded-md"
+            class="bg-ffffff w-56 h-12 mt-340px flex justify-center items-center rounded-md finalBt"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-blue-1">블러처리는 나중에, 텀블벅버튼</span>
+            <span className="text-blue-3 font-bold text-lg">
+              텀블벅 바로가기
+            </span>
           </a>
 
           <Link
             to={{ pathname: "/intro" }}
-            style={{ width: 70, height: 70, marginTop: 150 }}
+            style={{ width: 70, height: 70, marginTop: 135 }}
           >
             <div></div>
           </Link>

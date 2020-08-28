@@ -24,8 +24,8 @@ const Result_C = () => {
         <div className="body">
           <div className="flex flex-col w-375px h-1100px justify-end items-center">
             <Link to={{ pathname: "./final" }} style={{ zIndex: 30 }}>
-              <div className="bg-blue-2 w-286px h-48px flex justify-center items-center rounded-md mb-8">
-                <span>버튼</span>
+              <div className="bg-ffffff w-56 h-48px flex justify-center items-center rounded-md mb-12">
+                <span className="text-black font-bold">다음으로</span>
               </div>
             </Link>
           </div>
