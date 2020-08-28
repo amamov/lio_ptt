@@ -82,7 +82,7 @@ const Test10 = () => {
           <div className="mt-56">
             <div className="flex flex-col items-start text-ffffff">
               <button
-                className="text-left animate-pulse w-full bt_hover bt_active"
+                className="text-left animate-pulse w-full bt_hover"
                 style={{ display: showA() }}
                 onClick={(event) => handleClickA(event)}
               >
@@ -92,7 +92,7 @@ const Test10 = () => {
                 </div>
               </button>
               <button
-                className="text-left animate-pulse w-full mt-10 bt_hover bt_active"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showB() }}
                 onClick={(event) => handleClickB(event)}
               >
@@ -103,7 +103,7 @@ const Test10 = () => {
               </button>
 
               <button
-                className="text-left animate-pulse w-full mt-10 bt_hover bt_active"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showC() }}
                 onClick={(event) => handleClickC(event)}
               >
@@ -116,7 +116,7 @@ const Test10 = () => {
               </button>
 
               <button
-                className="text-left animate-pulse w-full mt-10 bt_hover bt_active"
+                className="text-left animate-pulse w-full mt-10 bt_hover"
                 style={{ display: showD() }}
                 onClick={(event) => handleClickD(event)}
               >
