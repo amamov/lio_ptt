@@ -29,7 +29,7 @@ const Final = () => {
       {isReady ? (
         <div className="w-375px h-667px flex flex-col items-center z-30">
           <a
-            href="https://www.google.com"
+            href="https://amamov.tistory.com/"
             class="bg-ffffff w-56 h-12 mt-340px flex justify-center items-center rounded-md finalBt"
             target="_blank"
             rel="noopener noreferrer"
