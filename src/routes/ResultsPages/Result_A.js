@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Cube from "styled-loaders-react/lib/components/Cube";
 
 const Result_A = () => {
-  const src = require("../../images/Result/C.svg");
+  const src = require("../../images/Result/A.svg");
   const [isReady, setIsReady] = useState(false);
   const onImageLoaded = () => {
     setIsReady(true);
