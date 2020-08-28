@@ -98,7 +98,7 @@ const Test10 = () => {
               >
                 <div className="flex flex-row w-full items-center">
                   <div className="bg-orange mr-2 w-2 h-2 rounded-md"></div>
-                  <span className="text-16px text-extrabold">셀러드</span>
+                  <span className="text-16px text-extrabold">샐러드</span>
                 </div>
               </button>
 
