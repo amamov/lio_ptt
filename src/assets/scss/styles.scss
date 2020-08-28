@@ -277,8 +277,10 @@ LOADING BAR
   left: 0;
   width: 0;
   background: #f26431;
-  -webkit-animation: load 12.4s 1s forwards;
-  animation: load 12.4s 1s forwards;
+  // -webkit-animation: load 12.4s 1s forwards;
+  // animation: load 12.4s 1s forwards;
+  -webkit-animation: load 14.4s forwards;
+  animation: load 14.4s forwards;
 }
 .loading-bar,
 .loading-bar:before {
@@ -410,9 +412,9 @@ ANIMATIONS
   0% {
     width: 0;
   }
-  97% {
-    width: 50px;
-  }
+  // 97% {
+  //   width: 170px; // 50px
+  // }
   100% {
     width: 250px;
   }
