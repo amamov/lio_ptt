@@ -91,7 +91,7 @@ const TestSheet = ({
   return (
     <div className="flex flex-col items-start">
       <button
-        className="text-left animate-pulse w-full bt_hover"
+        className="text-left animate-pulse w-full bt_hover bt_active"
         onClick={(event) => handleClickA(event)}
       >
         <span className={`${btColor} mr-2 text-extrabold text-16px`}>1</span>
@@ -99,7 +99,7 @@ const TestSheet = ({
       </button>
 
       <button
-        className={`text-left ${mt} animate-pulse w-full bt_hover`}
+        className={`text-left ${mt} animate-pulse w-full bt_hover bt_active`}
         onClick={(event) => handleClickB(event)}
       >
         <span className={`${btColor} mr-2 text-extrabold text-16px`}>2</span>
@@ -107,7 +107,7 @@ const TestSheet = ({
       </button>
 
       <button
-        className={`text-left ${mt} animate-pulse w-full bt_hover`}
+        className={`text-left ${mt} animate-pulse w-full bt_hover bt_active`}
         onClick={(event) => handleClickC(event)}
       >
         <span className={`${btColor} mr-2 text-extrabold text-16px`}>3</span>
@@ -115,7 +115,7 @@ const TestSheet = ({
       </button>
 
       <button
-        className={`text-left ${mt} animate-pulse w-full bt_hover`}
+        className={`text-left ${mt} animate-pulse w-full bt_hover bt_active`}
         onClick={(event) => handleClickD(event)}
       >
         <span className={`${btColor} mr-2 text-extrabold text-16px w-full`}>
