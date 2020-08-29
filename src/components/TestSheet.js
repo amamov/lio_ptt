@@ -36,7 +36,7 @@ const TestSheet = ({
         result_list.push(key);
       }
     });
-    console.log(result_list);
+    // console.log(result_list);
     goToResultPage(result_list);
   }, [pt_obj, goToResultPage]);
 

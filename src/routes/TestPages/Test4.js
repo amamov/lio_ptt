@@ -34,7 +34,7 @@ const Test4 = () => {
         <div className="w-375px h-667px p-12 z-30 text-ffffff">
           <div className="mt-56">
             <TestSheet
-              one={"바로 일어나서 욕을 한다."}
+              one={"기분 나쁜 표정을 짓는다."}
               two={"옷이 더러워졌는지 확인한다."}
               three={"웃으며 괜찮다고 이야기한다."}
               four={"아무일도 없었던 것 처럼 유유히 옆 칸으로 옮긴다."}
