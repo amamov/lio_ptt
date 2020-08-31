@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <>
       <div id="loader">
-        <div className="face">
+        {/* <div className="face">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const Loader = () => {
               </g>
             </g>
           </svg>
-        </div>
+        </div> */}
         <div className="loading-bar"></div>
       </div>
     </>

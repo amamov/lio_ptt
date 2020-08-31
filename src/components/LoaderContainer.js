@@ -14,7 +14,7 @@ const LoaderContainer = ({ children }) => {
         image.onerror = reject();
       });
     });
-    setTimeout(() => setIsReady(true), 16000);
+    setTimeout(() => setIsReady(true), 6000);
   };
 
   useEffect(() => {

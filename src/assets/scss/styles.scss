@@ -175,8 +175,10 @@ path {
   align-items: center;
   background: #1c1c35;
   z-index: 99;
-  -webkit-animation: offscreen 0.5s 15s forwards;
-  animation: offscreen 0.5s 15s forwards;
+  // -webkit-animation: offscreen 0.5s 15s forwards;
+  // animation: offscreen 0.5s 15s forwards;
+  -webkit-animation: offscreen 0.5s 5s forwards; //c
+  animation: offscreen 0.5s 5s forwards; //c
 }
 .face {
   width: 270px;
@@ -279,8 +281,10 @@ LOADING BAR
   background: #f26431;
   // -webkit-animation: load 12.4s 1s forwards;
   // animation: load 12.4s 1s forwards;
-  -webkit-animation: load 14.4s forwards;
-  animation: load 14.4s forwards;
+  // -webkit-animation: load 14.4s forwards;
+  // animation: load 14.4s forwards;
+  -webkit-animation: load 5s forwards; //c
+  animation: load 5s forwards; //c
 }
 .loading-bar,
 .loading-bar:before {
